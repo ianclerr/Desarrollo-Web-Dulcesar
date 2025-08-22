@@ -35,8 +35,9 @@
         transition: all 0.3s ease;
     }
     .category-tab.active {
-        background: linear-gradient(135deg, #ea580c 0%, #dc2626 100%);
-        color: white;
+        background: white;
+        color: #1f2937;
+        box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.15), 0 10px 20px -5px rgba(0, 0, 0, 0.1);
     }
     .video-thumbnail {
         background: linear-gradient(135deg, #fed7aa 0%, #fdba74 100%);
@@ -48,32 +49,37 @@
 </style>
 
 {{-- Hero Section --}}
-<section class="py-20 lg:py-32 bg-gradient-to-br from-gray-50 to-orange-50">
-    <div class="container mx-auto px-4 lg:px-8">
-        <div class="text-center mb-16 reveal-on-scroll">
-            <h1 class="font-display text-4xl lg:text-6xl font-bold text-gray-800 mb-6">
-                Blog & <span class="text-orange-600">Recetario</span>
+<section class="py-24 lg:py-40 relative overflow-hidden">
+    {{-- Fondo con imagen recetario banner --}}
+    <div class="absolute inset-0 bg-cover bg-center scale-110" style="background-image: url('/images/recetario banner.jpg')"></div>
+    {{-- Overlay gradiente para mejorar legibilidad --}}
+    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-orange-900/70 to-red-900/80"></div>
+    
+    <div class="container mx-auto px-4 lg:px-8 relative z-10">
+        <div class="text-center mb-12 reveal-on-scroll">
+            <h1 class="font-display text-4xl lg:text-6xl font-bold text-white mb-6 drop-shadow-2xl">
+                Blog & <span class="text-orange-300">Recetario</span>
             </h1>
-            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p class="text-xl text-white max-w-3xl mx-auto drop-shadow-lg font-medium">
                 Descubre recetas deliciosas, tips de cocina, consejos nutricionales y las últimas novedades con nuestros productos Dul-Cesar
             </p>
         </div>
 
         {{-- Filtros de Categoría --}}
-        <div class="flex flex-wrap justify-center gap-4 mb-12">
-            <button class="category-tab active px-6 py-3 rounded-full border-2 border-orange-600 font-semibold">
+        <div class="flex flex-wrap justify-center gap-4 mb-8">
+            <button class="category-tab active px-6 py-3 rounded-full border-2 border-white font-semibold bg-white text-gray-800 shadow-lg">
                 Todas
             </button>
-            <button class="category-tab px-6 py-3 rounded-full border-2 border-orange-600 font-semibold text-orange-600 hover:bg-orange-600 hover:text-white">
+            <button class="category-tab px-6 py-3 rounded-full border-2 border-white font-semibold text-gray-800 bg-white shadow-lg hover:shadow-xl transition-all duration-300">
                 Recetas
             </button>
-            <button class="category-tab px-6 py-3 rounded-full border-2 border-orange-600 font-semibold text-orange-600 hover:bg-orange-600 hover:text-white">
+            <button class="category-tab px-6 py-3 rounded-full border-2 border-white font-semibold text-gray-800 bg-white shadow-lg hover:shadow-xl transition-all duration-300">
                 Tips de Cocina
             </button>
-            <button class="category-tab px-6 py-3 rounded-full border-2 border-orange-600 font-semibold text-orange-600 hover:bg-orange-600 hover:text-white">
+            <button class="category-tab px-6 py-3 rounded-full border-2 border-white font-semibold text-gray-800 bg-white shadow-lg hover:shadow-xl transition-all duration-300">
                 Novedades
             </button>
-            <button class="category-tab px-6 py-3 rounded-full border-2 border-orange-600 font-semibold text-orange-600 hover:bg-orange-600 hover:text-white">
+            <button class="category-tab px-6 py-3 rounded-full border-2 border-white font-semibold text-gray-800 bg-white shadow-lg hover:shadow-xl transition-all duration-300">
                 Nutrición
             </button>
         </div>
@@ -81,8 +87,13 @@
 </section>
 
 {{-- Contenido Principal --}}
-<section class="py-16 bg-white">
-    <div class="container mx-auto px-4 lg:px-8">
+<section class="py-16 bg-white relative overflow-hidden">
+    {{-- Fondo cuadrille --}}
+    <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/imagenes/cuadrille tipo 1.jpeg.jpg')"></div>
+    {{-- Overlay blanco semi-transparente --}}
+    <div class="absolute inset-0 bg-white/80"></div>
+    
+    <div class="container mx-auto px-4 lg:px-8 relative z-10">
         <div class="max-w-7xl mx-auto">
             
             {{-- Grid de Contenido --}}
@@ -90,23 +101,25 @@
                 
                 {{-- Receta Destacada --}}
                 <div class="lg:col-span-2">
-                    <div class="flyer-card bg-white rounded-3xl p-8 shadow-2xl hover:shadow-orange-500/10 transition-all duration-500">
+                    <div class="flyer-card bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-2xl hover:shadow-orange-500/10 transition-all duration-500">
                         {{-- Header del Flyer --}}
                         <div class="relative mb-6">
                             <div class="recipe-badge absolute top-4 right-4 px-4 py-2 rounded-full text-white font-bold text-sm z-10">
                                 RECETA DESTACADA
                             </div>
-                            <div class="w-full h-64 bg-gradient-to-br from-orange-200 to-orange-300 rounded-2xl flex items-center justify-center">
-                                <div class="text-center">
-                                    <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
-                                        <svg class="w-12 h-12 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-                                        </svg>
-                                    </div>
-                                    <h3 class="text-3xl font-bold text-gray-800">Torta de Chocolate Premium</h3>
-                                    <p class="text-gray-600">Con Cacao Dul-Cesar Premium</p>
-                                </div>
-                            </div>
+                                                         <div class="w-full h-64 bg-cover bg-center rounded-2xl" style="background-image: url('/images/brownies.jpg')">
+                                 <div class="w-full h-full bg-black/30 rounded-2xl flex items-center justify-center">
+                                     <div class="text-center">
+                                         <div class="w-24 h-24 bg-white/90 rounded-full flex items-center justify-center mx-auto mb-4">
+                                             <svg class="w-12 h-12 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                                             </svg>
+                                         </div>
+                                         <h3 class="text-3xl font-bold text-white drop-shadow-lg">Torta de Chocolate Premium</h3>
+                                         <p class="text-white/90 drop-shadow-lg">Con Cacao Dul-Cesar Premium</p>
+                                     </div>
+                                 </div>
+                             </div>
                         </div>
 
                         {{-- Contenido del Flyer --}}
@@ -199,7 +212,7 @@
                 <div class="space-y-8">
                     
                     {{-- Video Tutorial --}}
-                    <div class="bg-white rounded-3xl p-6 shadow-xl">
+                    <div class="bg-white/90 backdrop-blur-sm rounded-3xl p-6 shadow-xl">
                         <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
                             <svg class="w-6 h-6 text-orange-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1.586a1 1 0 01.707.293l2.414 2.414a1 1 0 00.707.293H15M9 10v4a1 1 0 001 1h4M9 10V9a1 1 0 011-1h4a1 1 0 011 1v1M9 10H8a1 1 0 00-1 1v3a1 1 0 001 1h1m0-5h4"></path>
@@ -253,15 +266,17 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     
                     {{-- Receta 1 --}}
-                    <div class="flyer-card bg-white rounded-3xl p-6 shadow-xl hover:shadow-orange-500/10 transition-all duration-500">
-                        <div class="w-full h-40 bg-gradient-to-br from-orange-200 to-orange-300 rounded-2xl flex items-center justify-center mb-4">
-                            <div class="text-center">
-                                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-2">
-                                    <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                                    </svg>
+                    <div class="flyer-card bg-white/90 backdrop-blur-sm rounded-3xl p-6 shadow-xl hover:shadow-orange-500/10 transition-all duration-500">
+                        <div class="w-full h-40 bg-cover bg-center rounded-2xl mb-4" style="background-image: url('/images/muffins.jpg')">
+                            <div class="w-full h-full bg-black/20 rounded-2xl flex items-center justify-center">
+                                <div class="text-center">
+                                    <div class="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center mx-auto mb-2">
+                                        <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-lg font-bold text-white drop-shadow-lg">Galletas de Avena</h3>
                                 </div>
-                                <h3 class="text-lg font-bold text-gray-800">Galletas de Avena</h3>
                             </div>
                         </div>
                         <p class="text-gray-600 text-sm mb-4">Deliciosas galletas crujientes con avena y azúcar Dul-Cesar</p>
@@ -272,15 +287,17 @@
                     </div>
 
                     {{-- Receta 2 --}}
-                    <div class="flyer-card bg-white rounded-3xl p-6 shadow-xl hover:shadow-orange-500/10 transition-all duration-500">
-                        <div class="w-full h-40 bg-gradient-to-br from-orange-200 to-orange-300 rounded-2xl flex items-center justify-center mb-4">
-                            <div class="text-center">
-                                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-2">
-                                    <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
-                                    </svg>
+                    <div class="flyer-card bg-white/90 backdrop-blur-sm rounded-3xl p-6 shadow-xl hover:shadow-orange-500/10 transition-all duration-500">
+                        <div class="w-full h-40 bg-cover bg-center rounded-2xl mb-4" style="background-image: url('/images/muffins.jpg')">
+                            <div class="w-full h-full bg-black/20 rounded-2xl flex items-center justify-center">
+                                <div class="text-center">
+                                    <div class="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center mx-auto mb-2">
+                                        <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-lg font-bold text-white drop-shadow-lg">Muffins de Chocolate</h3>
                                 </div>
-                                <h3 class="text-lg font-bold text-gray-800">Muffins de Chocolate</h3>
                             </div>
                         </div>
                         <p class="text-gray-600 text-sm mb-4">Esponjosos muffins con chips de chocolate y cacao premium</p>
@@ -291,15 +308,17 @@
                     </div>
 
                     {{-- Receta 3 --}}
-                    <div class="flyer-card bg-white rounded-3xl p-6 shadow-xl hover:shadow-orange-500/10 transition-all duration-500">
-                        <div class="w-full h-40 bg-gradient-to-br from-orange-200 to-orange-300 rounded-2xl flex items-center justify-center mb-4">
-                            <div class="text-center">
-                                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-2">
-                                    <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
-                                    </svg>
+                    <div class="flyer-card bg-white/90 backdrop-blur-sm rounded-3xl p-6 shadow-xl hover:shadow-orange-500/10 transition-all duration-500">
+                        <div class="w-full h-40 bg-cover bg-center rounded-2xl mb-4" style="background-image: url('/images/brownies.jpg')">
+                            <div class="w-full h-full bg-black/20 rounded-2xl flex items-center justify-center">
+                                <div class="text-center">
+                                    <div class="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center mx-auto mb-2">
+                                        <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-lg font-bold text-white drop-shadow-lg">Brownies Clásicos</h3>
                                 </div>
-                                <h3 class="text-lg font-bold text-gray-800">Brownies Clásicos</h3>
                             </div>
                         </div>
                         <p class="text-gray-600 text-sm mb-4">Brownies húmedos y chocolatosos, perfectos para cualquier ocasión</p>
@@ -312,35 +331,42 @@
             </div>
 
             {{-- Consejos Nutricionales --}}
-            <div class="mt-16 bg-gradient-to-r from-green-50 to-blue-50 rounded-3xl p-8">
-                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Consejos Nutricionales</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="bg-white rounded-2xl p-6 shadow-lg">
-                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
-                            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                            </svg>
+            <div class="mt-16 bg-gradient-to-r from-green-50 to-blue-50 rounded-3xl p-8 relative overflow-hidden">
+                {{-- Fondo cuadrille --}}
+                <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/imagenes/cuadrille tipo 1.jpeg.jpg')"></div>
+                {{-- Overlay gradiente --}}
+                <div class="absolute inset-0 bg-gradient-to-r from-green-50/80 to-blue-50/80"></div>
+                
+                <div class="relative z-10">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Consejos Nutricionales</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="font-bold text-gray-800 mb-2">Beneficios del Cacao</h3>
+                            <p class="text-sm text-gray-600">Rico en antioxidantes, mejora el estado de ánimo y protege el corazón.</p>
                         </div>
-                        <h3 class="font-bold text-gray-800 mb-2">Beneficios del Cacao</h3>
-                        <p class="text-sm text-gray-600">Rico en antioxidantes, mejora el estado de ánimo y protege el corazón.</p>
-                    </div>
-                    <div class="bg-white rounded-2xl p-6 shadow-lg">
-                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                            </svg>
+                        <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="font-bold text-gray-800 mb-2">Energía Natural</h3>
+                            <p class="text-sm text-gray-600">Nuestro azúcar proporciona energía rápida para tus actividades diarias.</p>
                         </div>
-                        <h3 class="font-bold text-gray-800 mb-2">Energía Natural</h3>
-                        <p class="text-sm text-gray-600">Nuestro azúcar proporciona energía rápida para tus actividades diarias.</p>
-                    </div>
-                    <div class="bg-white rounded-2xl p-6 shadow-lg">
-                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4">
-                            <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
-                            </svg>
+                        <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
+                            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                                <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="font-bold text-gray-800 mb-2">Moderación</h3>
+                            <p class="text-sm text-gray-600">Disfruta nuestros productos como parte de una dieta equilibrada.</p>
                         </div>
-                        <h3 class="font-bold text-gray-800 mb-2">Moderación</h3>
-                        <p class="text-sm text-gray-600">Disfruta nuestros productos como parte de una dieta equilibrada.</p>
                     </div>
                 </div>
             </div>
@@ -365,15 +391,9 @@ document.addEventListener('DOMContentLoaded', function() {
         tab.addEventListener('click', function() {
             // Remover clase active de todos los tabs
             categoryTabs.forEach(t => t.classList.remove('active'));
-            categoryTabs.forEach(t => {
-                t.classList.add('text-orange-600');
-                t.classList.remove('text-white');
-            });
             
             // Agregar clase active al tab clickeado
             this.classList.add('active');
-            this.classList.remove('text-orange-600');
-            this.classList.add('text-white');
         });
     });
 

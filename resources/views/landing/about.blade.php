@@ -31,12 +31,18 @@
     </section>
 
     {{-- Historia de la empresa --}}
-    <section id="historia" class="py-20 lg:py-32 gradient-overlay">
-        <div class="container mx-auto px-4 lg:px-8">
+    <section id="historia" class="py-20 lg:py-32 relative overflow-hidden">
+        {{-- Fondo con cuadrille --}}
+        <div class="absolute inset-0 bg-cover bg-center opacity-15" style="background-image: url('/images/imagenes/cuadrille tipo 1.jpeg.jpg')"></div>
+        
+        {{-- Overlay muy sutil sin raya visible --}}
+        <div class="absolute inset-0 bg-gradient-to-br from-orange-50/30 to-amber-50/30"></div>
+        
+        <div class="container mx-auto px-4 lg:px-8 relative z-10">
             <div class="max-w-6xl mx-auto">
                 <div class="text-center mb-16 reveal-on-scroll">
                     <h2 class="font-display text-4xl lg:text-6xl font-bold text-gray-800 mb-8 leading-tight">
-                        <span class="text-orange-600">Tradición, calidad y compromiso</span><br>
+                        <span class="text-red-600">Tradición, calidad y compromiso</span><br>
                         con el sabor paraguayo
                     </h2>
                     <p class="text-xl lg:text-2xl text-gray-600 font-light leading-relaxed max-w-4xl mx-auto">
@@ -55,7 +61,7 @@
                             Así surgió Dul-Cesar, una marca que con el paso del tiempo se consolidó como referente en la industria nacional de alimentos. La mermelada de guayaba tradicional fue el primer producto en salir al mercado, rápidamente conquistó los hogares paraguayos por su sabor auténtico y su calidad constante.
                         </p>
                         <div class="flex items-center space-x-4">
-                            <div class="w-16 h-16 bg-gradient-to-r from-orange-500 to-amber-500 rounded-full flex items-center justify-center">
+                            <div class="w-16 h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-full flex items-center justify-center">
                                 <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                                 </svg>
@@ -68,7 +74,7 @@
                     </div>
                     <div class="reveal-on-scroll">
                         <div class="relative">
-                            <div class="bg-gradient-to-br from-orange-400 to-amber-500 rounded-3xl p-8 text-white shadow-2xl">
+                            <div class="bg-gradient-to-br from-red-500 to-red-600 rounded-3xl p-8 text-white shadow-2xl">
                                 <h4 class="font-display text-2xl font-bold mb-4">Nuestros Valores</h4>
                                 <div class="space-y-4">
                                     <div class="flex items-start space-x-3">
@@ -125,11 +131,17 @@
     </section>
 
     {{-- Línea de tiempo --}}
-    <section class="py-20 lg:py-32 bg-gradient-to-br from-orange-50 to-amber-50">
-        <div class="container mx-auto px-4 lg:px-8">
+    <section class="py-20 lg:py-32 relative overflow-hidden">
+        {{-- Fondo con cuadrille --}}
+        <div class="absolute inset-0 bg-cover bg-center opacity-15" style="background-image: url('/images/imagenes/cuadrille tipo 1.jpeg.jpg')"></div>
+        
+        {{-- Overlay muy sutil sin raya visible --}}
+        <div class="absolute inset-0 bg-gradient-to-br from-orange-50/30 to-amber-50/30"></div>
+        
+        <div class="container mx-auto px-4 lg:px-8 relative z-10">
             <div class="text-center mb-16 reveal-on-scroll">
                 <h3 class="font-display text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
-                    Nuestra <span class="text-orange-600">Evolución</span>
+                    Nuestra <span class="text-red-600">Evolución</span>
                 </h3>
                 <p class="text-xl text-gray-600 max-w-2xl mx-auto">
                     Más de cuatro décadas de crecimiento, innovación y compromiso con la excelencia
@@ -139,31 +151,31 @@
             <div class="max-w-6xl mx-auto">
                 <div class="relative">
                     {{-- Línea central --}}
-                    <div class="absolute left-1/2 transform -translate-x-1/2 w-1 bg-orange-200 h-full"></div>
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-1 bg-red-200 h-full"></div>
                     
                     {{-- Hitos --}}
                     <div class="space-y-12">
                         {{-- 1982 --}}
                         <div class="flex items-center reveal-on-scroll">
                             <div class="w-1/2 pr-8 text-right">
-                                <div class="bg-white rounded-2xl p-6 shadow-xl">
+                                <div class="bg-white/80 rounded-2xl p-6 shadow-xl">
                                     <h4 class="font-display text-2xl font-bold text-gray-800 mb-2">1982</h4>
-                                    <h5 class="font-semibold text-orange-600 mb-2">Fundación de Dul-Cesar</h5>
+                                    <h5 class="font-semibold text-red-600 mb-2">Fundación de Dul-Cesar</h5>
                                     <p class="text-gray-600">Nacimos en un pequeño hogar bajo la sombra de un árbol de mango, con la visión de ofrecer productos alimenticios elaborados con dedicación y respeto por la tradición.</p>
                                 </div>
                             </div>
-                            <div class="w-8 h-8 bg-orange-500 rounded-full border-4 border-white shadow-lg z-10"></div>
+                            <div class="w-8 h-8 bg-red-500 rounded-full border-4 border-white shadow-lg z-10"></div>
                             <div class="w-1/2 pl-8"></div>
                         </div>
 
                         {{-- 1985 --}}
                         <div class="flex items-center reveal-on-scroll">
                             <div class="w-1/2 pr-8"></div>
-                            <div class="w-8 h-8 bg-orange-500 rounded-full border-4 border-white shadow-lg z-10"></div>
+                            <div class="w-8 h-8 bg-red-500 rounded-full border-4 border-white shadow-lg z-10"></div>
                             <div class="w-1/2 pl-8">
-                                <div class="bg-white rounded-2xl p-6 shadow-xl">
+                                <div class="bg-white/80 rounded-2xl p-6 shadow-xl">
                                     <h4 class="font-display text-2xl font-bold text-gray-800 mb-2">1985</h4>
-                                    <h5 class="font-semibold text-orange-600 mb-2">Primeros Productos</h5>
+                                    <h5 class="font-semibold text-red-600 mb-2">Primeros Productos</h5>
                                     <p class="text-gray-600">La mermelada de guayaba tradicional conquistó los hogares paraguayos, seguida por el dulce de mamón y dulce de batata tradicional.</p>
                                 </div>
                             </div>
@@ -172,24 +184,24 @@
                         {{-- 1990 --}}
                         <div class="flex items-center reveal-on-scroll">
                             <div class="w-1/2 pr-8 text-right">
-                                <div class="bg-white rounded-2xl p-6 shadow-xl">
+                                <div class="bg-white/80 rounded-2xl p-6 shadow-xl">
                                     <h4 class="font-display text-2xl font-bold text-gray-800 mb-2">1990</h4>
-                                    <h5 class="font-semibold text-orange-600 mb-2">Crecimiento y Expansión</h5>
+                                    <h5 class="font-semibold text-red-600 mb-2">Crecimiento y Expansión</h5>
                                     <p class="text-gray-600">Con el liderazgo de Anibal Ramón Zimardi y Ana Maria Riveros de Zimardi, Dul-Cesar creció con paso firme, apostando a la mejora continua.</p>
                                 </div>
                             </div>
-                            <div class="w-8 h-8 bg-orange-500 rounded-full border-4 border-white shadow-lg z-10"></div>
+                            <div class="w-8 h-8 bg-red-500 rounded-full border-4 border-white shadow-lg z-10"></div>
                             <div class="w-1/2 pl-8"></div>
                         </div>
 
                         {{-- 2000 --}}
                         <div class="flex items-center reveal-on-scroll">
                             <div class="w-1/2 pr-8"></div>
-                            <div class="w-8 h-8 bg-orange-500 rounded-full border-4 border-white shadow-lg z-10"></div>
+                            <div class="w-8 h-8 bg-red-500 rounded-full border-4 border-white shadow-lg z-10"></div>
                             <div class="w-1/2 pl-8">
-                                <div class="bg-white rounded-2xl p-6 shadow-xl">
+                                <div class="bg-white/80 rounded-2xl p-6 shadow-xl">
                                     <h4 class="font-display text-2xl font-bold text-gray-800 mb-2">2000</h4>
-                                    <h5 class="font-semibold text-orange-600 mb-2">Expansión del Portafolio</h5>
+                                    <h5 class="font-semibold text-red-600 mb-2">Expansión del Portafolio</h5>
                                     <p class="text-gray-600">Ampliamos nuestra gama de productos incluyendo mermeladas, dulces, aderezos, salsas, vinagres y más productos alimenticios.</p>
                                 </div>
                             </div>
@@ -198,22 +210,22 @@
                         {{-- 2010 --}}
                         <div class="flex items-center reveal-on-scroll">
                             <div class="w-1/2 pr-8 text-right">
-                                <div class="bg-white rounded-2xl p-6 shadow-xl">
+                                <div class="bg-white/80 rounded-2xl p-6 shadow-xl">
                                     <h4 class="font-display text-2xl font-bold text-gray-800 mb-2">2010</h4>
-                                    <h5 class="font-semibold text-orange-600 mb-2">200+ Productos</h5>
+                                    <h5 class="font-semibold text-red-600 mb-2">200+ Productos</h5>
                                     <p class="text-gray-600">Alcanzamos más de 200 productos en nuestro catálogo, abasteciendo puntos de venta en todo Paraguay con el objetivo de ganar el corazón de los consumidores.</p>
                                 </div>
                             </div>
-                            <div class="w-8 h-8 bg-orange-500 rounded-full border-4 border-white shadow-lg z-10"></div>
+                            <div class="w-8 h-8 bg-red-500 rounded-full border-4 border-white shadow-lg z-10"></div>
                             <div class="w-1/2 pl-8"></div>
                         </div>
 
                         {{-- 2025 --}}
                         <div class="flex items-center reveal-on-scroll">
                             <div class="w-1/2 pr-8"></div>
-                            <div class="w-8 h-8 bg-orange-500 rounded-full border-4 border-white shadow-lg z-10"></div>
+                            <div class="w-8 h-8 bg-red-500 rounded-full border-4 border-white shadow-lg z-10"></div>
                             <div class="w-1/2 pl-8">
-                                <div class="bg-gradient-to-r from-orange-500 to-amber-500 rounded-2xl p-6 shadow-xl text-white">
+                                <div class="bg-gradient-to-r from-red-500 to-red-600 rounded-2xl p-6 shadow-xl text-white">
                                     <h4 class="font-display text-2xl font-bold mb-2">2025</h4>
                                     <h5 class="font-semibold mb-2">Presente y Futuro</h5>
                                     <p class="text-white/90">Continuamos proyectándonos con una identidad renovada y un enfoque estratégico orientado a mercados más exigentes, sin perder nuestra esencia familiar ni nuestra raíz profundamente paraguaya.</p>
@@ -232,26 +244,34 @@
             <div class="max-w-6xl mx-auto">
                 {{-- Sección de fundadores --}}
                 <div class="mb-20 reveal-on-scroll">
-                    <div class="bg-gradient-to-r from-orange-50 to-amber-50 rounded-3xl p-8 lg:p-12">
-                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                            <div>
-                                <h3 class="font-display text-3xl font-bold text-gray-800 mb-6">El Liderazgo de Nuestros Fundadores</h3>
-                                <p class="text-lg text-gray-600 leading-relaxed mb-6">
-                                    Con el liderazgo de los fundadores, <strong>Anibal Ramón Zimardi</strong> y <strong>Ana Maria Riveros de Zimardi</strong>, impulsando el inicio con sus labores. Dul-Cesar fue creciendo con paso firme, apostando a la mejora continua, la expansión del portafolio y la inversión en procesos productivos eficientes y sostenibles.
-                                </p>
-                                <p class="text-lg text-gray-600 leading-relaxed mb-6">
-                                    Lo que comenzó como un pequeño emprendimiento hoy es una empresa con más de <strong>200 productos</strong> en el catálogo, abasteciendo puntos de venta con el objetivo de ganar el corazón de los consumidores.
-                                </p>
-                            </div>
-                            <div class="text-center">
-                                <div class="w-32 h-32 bg-gradient-to-r from-orange-500 to-amber-500 rounded-full flex items-center justify-center mx-auto mb-6">
-                                    <svg class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
-                                    </svg>
+                    <div class="relative overflow-hidden rounded-3xl p-8 lg:p-12">
+                        {{-- Fondo con cuadrille --}}
+                        <div class="absolute inset-0 bg-cover bg-center opacity-15" style="background-image: url('/images/imagenes/cuadrille tipo 1.jpeg.jpg')"></div>
+                        
+                        {{-- Overlay muy sutil sin raya visible --}}
+                        <div class="absolute inset-0 bg-gradient-to-r from-orange-50/30 to-amber-50/30"></div>
+                        
+                        <div class="relative z-10">
+                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                                <div>
+                                    <h3 class="font-display text-3xl font-bold text-gray-800 mb-6">El Liderazgo de Nuestros Fundadores</h3>
+                                    <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                                        Con el liderazgo de los fundadores, <strong>Anibal Ramón Zimardi</strong> y <strong>Ana Maria Riveros de Zimardi</strong>, impulsando el inicio con sus labores. Dul-Cesar fue creciendo con paso firme, apostando a la mejora continua, la expansión del portafolio y la inversión en procesos productivos eficientes y sostenibles.
+                                    </p>
+                                    <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                                        Lo que comenzó como un pequeño emprendimiento hoy es una empresa con más de <strong>200 productos</strong> en el catálogo, abasteciendo puntos de venta con el objetivo de ganar el corazón de los consumidores.
+                                    </p>
                                 </div>
-                                <h4 class="font-display text-2xl font-bold text-gray-800 mb-2">Fundadores</h4>
-                                <p class="text-gray-600">Anibal Ramón Zimardi</p>
-                                <p class="text-gray-600">Ana Maria Riveros de Zimardi</p>
+                                <div class="text-center">
+                                    <div class="w-32 h-32 bg-gradient-to-r from-red-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                                        <svg class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
+                                        </svg>
+                                    </div>
+                                    <h4 class="font-display text-2xl font-bold text-gray-800 mb-2">Fundadores</h4>
+                                    <p class="text-gray-600">Anibal Ramón Zimardi</p>
+                                    <p class="text-gray-600">Ana Maria Riveros de Zimardi</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -259,38 +279,46 @@
 
                 {{-- Sección de productos y compromiso --}}
                 <div class="mb-20 reveal-on-scroll">
-                    <div class="bg-white rounded-3xl p-8 lg:p-12 shadow-xl">
-                        <h3 class="font-display text-3xl font-bold text-gray-800 mb-6 text-center">Nuestro Compromiso Actual</h3>
-                        <p class="text-lg text-gray-600 leading-relaxed mb-8 text-center max-w-4xl mx-auto">
-                            Actualmente, Dul-Cesar ofrece una amplia gama de alimentos que incluyen mermeladas, dulces, aderezos, salsas, vinagres y más productos que buscan simplificar la vida del consumidor, manteniendo como prioridad el equilibrio entre innovación, sabor y respeto por los valores que nos dieron origen.
-                        </p>
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-                            <div class="p-6 bg-gradient-to-br from-orange-100 to-amber-100 rounded-2xl">
-                                <div class="w-16 h-16 bg-gradient-to-r from-orange-500 to-amber-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4z"/>
-                                    </svg>
+                    <div class="relative overflow-hidden rounded-3xl p-8 lg:p-12 shadow-xl">
+                        {{-- Fondo con cuadrille --}}
+                        <div class="absolute inset-0 bg-cover bg-center opacity-15" style="background-image: url('/images/imagenes/cuadrille tipo 1.jpeg.jpg')"></div>
+                        
+                        {{-- Overlay muy sutil sin raya visible --}}
+                        <div class="absolute inset-0 bg-gradient-to-br from-orange-50/30 to-amber-50/30"></div>
+                        
+                        <div class="relative z-10">
+                            <h3 class="font-display text-3xl font-bold text-gray-800 mb-6 text-center">Nuestro Compromiso Actual</h3>
+                            <p class="text-lg text-gray-600 leading-relaxed mb-8 text-center max-w-4xl mx-auto">
+                                Actualmente, Dul-Cesar ofrece una amplia gama de alimentos que incluyen mermeladas, dulces, aderezos, salsas, vinagres y más productos que buscan simplificar la vida del consumidor, manteniendo como prioridad el equilibrio entre innovación, sabor y respeto por los valores que nos dieron origen.
+                            </p>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                                <div class="p-6 bg-gradient-to-br from-red-100 to-red-200 rounded-2xl">
+                                    <div class="w-16 h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4z"/>
+                                        </svg>
+                                    </div>
+                                    <h4 class="font-semibold text-gray-800 mb-2">200+ Productos</h4>
+                                    <p class="text-gray-600 text-sm">En nuestro catálogo actual</p>
                                 </div>
-                                <h4 class="font-semibold text-gray-800 mb-2">200+ Productos</h4>
-                                <p class="text-gray-600 text-sm">En nuestro catálogo actual</p>
-                            </div>
-                            <div class="p-6 bg-gradient-to-br from-orange-100 to-amber-100 rounded-2xl">
-                                <div class="w-16 h-16 bg-gradient-to-r from-orange-500 to-amber-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                    </svg>
+                                <div class="p-6 bg-gradient-to-br from-red-100 to-red-200 rounded-2xl">
+                                    <div class="w-16 h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                        </svg>
+                                    </div>
+                                    <h4 class="font-semibold text-gray-800 mb-2">Calidad Garantizada</h4>
+                                    <p class="text-gray-600 text-sm">Estándares internacionales</p>
                                 </div>
-                                <h4 class="font-semibold text-gray-800 mb-2">Calidad Garantizada</h4>
-                                <p class="text-gray-600 text-sm">Estándares internacionales</p>
-                            </div>
-                            <div class="p-6 bg-gradient-to-br from-orange-100 to-amber-100 rounded-2xl">
-                                <div class="w-16 h-16 bg-gradient-to-r from-orange-500 to-amber-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
-                                    </svg>
+                                <div class="p-6 bg-gradient-to-br from-red-100 to-red-200 rounded-2xl">
+                                    <div class="w-16 h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                        </svg>
+                                    </div>
+                                    <h4 class="font-semibold text-gray-800 mb-2">Presencia Nacional</h4>
+                                    <p class="text-gray-600 text-sm">En todo Paraguay</p>
                                 </div>
-                                <h4 class="font-semibold text-gray-800 mb-2">Presencia Nacional</h4>
-                                <p class="text-gray-600 text-sm">En todo Paraguay</p>
                             </div>
                         </div>
                     </div>
@@ -298,7 +326,7 @@
 
                 {{-- Sección final de la historia --}}
                 <div class="reveal-on-scroll">
-                    <div class="bg-gradient-to-r from-orange-500 to-amber-500 rounded-3xl p-8 lg:p-12 text-white text-center">
+                    <div class="bg-gradient-to-r from-red-500 to-red-600 rounded-3xl p-8 lg:p-12 text-white text-center">
                         <h3 class="font-display text-3xl font-bold mb-6">Nuestra Visión de Futuro</h3>
                         <p class="text-lg leading-relaxed mb-6 max-w-4xl mx-auto">
                             A lo largo de más de 40 años de trayectoria, hemos logrado consolidar un modelo de gestión que combina tradición y tecnología, priorizando la seguridad alimentaria, el desarrollo de proveedores locales y el fortalecimiento de vínculos con nuestros clientes, tanto a nivel nacional como internacional.
@@ -318,12 +346,18 @@
     </section>
 
     {{-- Compromiso con la calidad --}}
-    <section class="py-20 lg:py-32">
-        <div class="container mx-auto px-4 lg:px-8">
+    <section class="py-20 lg:py-32 relative overflow-hidden">
+        {{-- Fondo con cuadrille --}}
+        <div class="absolute inset-0 bg-cover bg-center opacity-15" style="background-image: url('/images/imagenes/cuadrille tipo 1.jpeg.jpg')"></div>
+        
+        {{-- Overlay muy sutil sin raya visible --}}
+        <div class="absolute inset-0 bg-gradient-to-br from-orange-50/30 to-amber-50/30"></div>
+        
+        <div class="container mx-auto px-4 lg:px-8 relative z-10">
             <div class="max-w-6xl mx-auto">
                 <div class="text-center mb-16 reveal-on-scroll">
                     <h3 class="font-display text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
-                        Nuestro <span class="text-orange-600">Compromiso</span><br>
+                        Nuestro <span class="text-red-600">Compromiso</span><br>
                         con la Calidad
                     </h3>
                     <p class="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -333,8 +367,8 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {{-- Proceso 1 --}}
-                    <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal-on-scroll">
-                        <div class="w-16 h-16 bg-gradient-to-r from-orange-500 to-amber-500 rounded-full flex items-center justify-center mb-6">
+                    <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal-on-scroll">
+                        <div class="w-16 h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-full flex items-center justify-center mb-6">
                             <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                             </svg>
@@ -344,8 +378,8 @@
                     </div>
 
                     {{-- Proceso 2 --}}
-                    <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal-on-scroll">
-                        <div class="w-16 h-16 bg-gradient-to-r from-orange-500 to-amber-500 rounded-full flex items-center justify-center mb-6">
+                    <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal-on-scroll">
+                        <div class="w-16 h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-full flex items-center justify-center mb-6">
                             <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M4 3a2 2 0 100 4h12a2 2 0 100-4H4zM4 9a1 1 0 000 2v5a2 2 0 002 2h8a2 2 0 002-2v-5a1 1 0 100-2H4z"/>
                             </svg>
@@ -355,8 +389,8 @@
                     </div>
 
                     {{-- Proceso 3 --}}
-                    <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal-on-scroll">
-                        <div class="w-16 h-16 bg-gradient-to-r from-orange-500 to-amber-500 rounded-full flex items-center justify-center mb-6">
+                    <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal-on-scroll">
+                        <div class="w-16 h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-full flex items-center justify-center mb-6">
                             <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                             </svg>
@@ -366,8 +400,8 @@
                     </div>
 
                     {{-- Proceso 4 --}}
-                    <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal-on-scroll">
-                        <div class="w-16 h-16 bg-gradient-to-r from-orange-500 to-amber-500 rounded-full flex items-center justify-center mb-6">
+                    <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal-on-scroll">
+                        <div class="w-16 h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-full flex items-center justify-center mb-6">
                             <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4z"/>
                             </svg>
@@ -377,8 +411,8 @@
                     </div>
 
                     {{-- Proceso 5 --}}
-                    <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal-on-scroll">
-                        <div class="w-16 h-16 bg-gradient-to-r from-orange-500 to-amber-500 rounded-full flex items-center justify-center mb-6">
+                    <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal-on-scroll">
+                        <div class="w-16 h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-full flex items-center justify-center mb-6">
                             <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
                             </svg>
@@ -388,8 +422,8 @@
                     </div>
 
                     {{-- Proceso 6 --}}
-                    <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal-on-scroll">
-                        <div class="w-16 h-16 bg-gradient-to-r from-orange-500 to-amber-500 rounded-full flex items-center justify-center mb-6">
+                    <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal-on-scroll">
+                        <div class="w-16 h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-full flex items-center justify-center mb-6">
                             <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
                             </svg>
@@ -402,13 +436,19 @@
         </div>
     </section>
 
-    {{-- Equipo y Planta --}}
-    <section id="equipo" class="py-20 lg:py-32 bg-gradient-to-br from-orange-50 to-amber-50">
-        <div class="container mx-auto px-4 lg:px-8">
+        {{-- Equipo y Planta --}}
+    <section id="equipo" class="py-20 lg:py-32 relative overflow-hidden">
+        {{-- Fondo con cuadrille --}}
+        <div class="absolute inset-0 bg-cover bg-center opacity-15" style="background-image: url('/images/imagenes/cuadrille tipo 1.jpeg.jpg')"></div>
+        
+        {{-- Overlay muy sutil sin raya visible --}}
+        <div class="absolute inset-0 bg-gradient-to-br from-orange-50/30 to-amber-50/30"></div>
+        
+        <div class="container mx-auto px-4 lg:px-8 relative z-10">
             <div class="text-center mb-16 reveal-on-scroll">
                 <h3 class="font-display text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
-                    Nuestro <span class="text-orange-600">Equipo</span><br>
-                    y Nuestras <span class="text-orange-600">Instalaciones</span>
+                    Nuestro <span class="text-red-600">Equipo</span><br>
+                    y Nuestras <span class="text-red-600">Instalaciones</span>
                 </h3>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
                     Detrás de cada producto hay un equipo comprometido y instalaciones modernas que garantizan la más alta calidad.
@@ -429,19 +469,19 @@
                     {{-- Estadísticas --}}
                     <div class="grid grid-cols-2 gap-6">
                         <div class="text-center">
-                            <div class="text-3xl font-bold text-orange-600 mb-2">50+</div>
+                            <div class="text-3xl font-bold text-red-600 mb-2">50+</div>
                             <div class="text-gray-600">Profesionales</div>
                         </div>
                         <div class="text-center">
-                            <div class="text-3xl font-bold text-orange-600 mb-2">30+</div>
+                            <div class="text-3xl font-bold text-red-600 mb-2">30+</div>
                             <div class="text-gray-600">Años de experiencia</div>
                         </div>
                         <div class="text-center">
-                            <div class="text-3xl font-bold text-orange-600 mb-2">100+</div>
+                            <div class="text-3xl font-bold text-red-600 mb-2">100+</div>
                             <div class="text-gray-600">Productos</div>
                         </div>
                         <div class="text-center">
-                            <div class="text-3xl font-bold text-orange-600 mb-2">24/7</div>
+                            <div class="text-3xl font-bold text-red-600 mb-2">24/7</div>
                             <div class="text-gray-600">Compromiso</div>
                         </div>
                     </div>
@@ -450,7 +490,7 @@
                 {{-- Imagen del equipo --}}
                 <div class="reveal-on-scroll">
                     <div class="relative">
-                        <div class="bg-gradient-to-br from-orange-400 to-amber-500 rounded-3xl p-8 text-white shadow-2xl">
+                        <div class="bg-gradient-to-br from-red-500 to-red-600 rounded-3xl p-8 text-white shadow-2xl">
                             <div class="aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden mb-6">
                                 <div class="w-full h-64 bg-white/20 rounded-2xl flex items-center justify-center">
                                     <div class="text-center">
@@ -471,11 +511,11 @@
             {{-- Instalaciones --}}
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {{-- Planta principal --}}
-                <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal-on-scroll">
+                <div class="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal-on-scroll">
                     <div class="aspect-w-16 aspect-h-9 rounded-t-2xl overflow-hidden">
-                        <div class="w-full h-48 bg-gradient-to-br from-orange-100 to-amber-100 flex items-center justify-center">
+                        <div class="w-full h-48 bg-gradient-to-br from-red-100 to-red-200 flex items-center justify-center">
                             <div class="text-center">
-                                <svg class="w-12 h-12 mx-auto mb-2 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
+                                <svg class="w-12 h-12 mx-auto mb-2 text-red-500" fill="currentColor" viewBox="0 0 20 20">
                                     <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4z"/>
                                 </svg>
                                 <p class="text-gray-600">Planta Principal</p>
@@ -489,13 +529,13 @@
                 </div>
 
                 {{-- Laboratorio --}}
-                <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal-on-scroll">
+                <div class="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal-on-scroll">
                     <div class="aspect-w-16 aspect-h-9 rounded-t-2xl overflow-hidden">
-                        <div class="w-full h-48 bg-gradient-to-br from-blue-100 to-cyan-100 flex items-center justify-center">
+                        <div class="w-full h-48 bg-gradient-to-br from-red-100 to-red-200 flex items-center justify-center">
                             <div class="text-center">
-                                <svg class="w-12 h-12 mx-auto mb-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                                <svg class="w-12 h-12 mx-auto mb-2 text-red-500" fill="currentColor" viewBox="0 0 20 20">
                                     <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-                                </svg>
+                            </svg>
                                 <p class="text-gray-600">Laboratorio</p>
                             </div>
                         </div>
@@ -507,13 +547,13 @@
                 </div>
 
                 {{-- Almacén --}}
-                <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal-on-scroll">
+                <div class="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal-on-scroll">
                     <div class="aspect-w-16 aspect-h-9 rounded-t-2xl overflow-hidden">
-                        <div class="w-full h-48 bg-gradient-to-br from-green-100 to-emerald-100 flex items-center justify-center">
+                        <div class="w-full h-48 bg-gradient-to-br from-red-100 to-red-200 flex items-center justify-center">
                             <div class="text-center">
-                                <svg class="w-12 h-12 mx-auto mb-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                <svg class="w-12 h-12 mx-auto mb-2 text-red-500" fill="currentColor" viewBox="0 0 20 20">
                                     <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
-                                </svg>
+                            </svg>
                                 <p class="text-gray-600">Almacén</p>
                             </div>
                         </div>

@@ -3,8 +3,13 @@
 @section('content')
 <div class="font-body text-gray-800 overflow-x-hidden">
     {{-- Hero Section: Slider profesional + Césarito (no full-screen) --}}
-    <section class="relative bg-gradient-to-br from-orange-400 via-red-500 to-pink-500 text-white py-12 lg:py-16 overflow-hidden">
-        <div class="container mx-auto px-4 lg:px-8">
+    <section class="relative text-white py-12 lg:py-16 overflow-hidden">
+        {{-- Fondo con imagen banner_principal.jpg --}}
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/banner_principal.jpg')"></div>
+        
+        {{-- Overlay gradiente sobre la imagen --}}
+        <div class="absolute inset-0 bg-gradient-to-br from-orange-400/80 via-red-500/80 to-pink-500/80"></div>
+        <div class="container mx-auto px-4 lg:px-8 relative z-10">
             <div class="grid lg:grid-cols-2 gap-10 items-center">
                 {{-- Slider --}}
                 <div>
@@ -757,8 +762,14 @@ function toggleAdditionalCategories() {
             </div>
         </div>
     </section>
-    <section class="py-20 lg:py-32 bg-gradient-to-br from-gray-50 to-orange-50">
-    <div class="container mx-auto px-4 lg:px-8">
+    <section class="py-20 lg:py-32 relative overflow-hidden">
+        {{-- Fondo con cuadrille --}}
+        <div class="absolute inset-0 bg-cover bg-center opacity-10" style="background-image: url('/images/imagenes/cuadrille tipo 1.jpeg.jpg')"></div>
+        
+        {{-- Overlay gradiente --}}
+        <div class="absolute inset-0 bg-gradient-to-br from-gray-50/80 to-orange-50/80"></div>
+        
+        <div class="container mx-auto px-4 lg:px-8 relative z-10">
         {{-- Encabezado --}}
         <div class="text-center mb-16 reveal-on-scroll">
             <h4 class="font-display text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
@@ -773,22 +784,24 @@ function toggleAdditionalCategories() {
         <div class="max-w-6xl mx-auto">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 
-                {{-- Flyer 1: Receta --}}
+                {{-- Flyer 1: Brownies --}}
                 <div class="flyer-card bg-white rounded-3xl p-8 shadow-2xl hover:shadow-orange-500/10 transition-all duration-500">
                     {{-- Header del Flyer --}}
                     <div class="relative mb-6">
                         <div class="recipe-badge absolute top-4 right-4 px-4 py-2 rounded-full text-white font-bold text-sm">
                             NUEVA RECETA
                         </div>
-                        <div class="w-full h-48 bg-gradient-to-br from-orange-200 to-orange-300 rounded-2xl flex items-center justify-center">
-                            <div class="text-center">
-                                <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
-                                    <svg class="w-10 h-10 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-                                    </svg>
+                        <div class="w-full h-48 bg-cover bg-center rounded-2xl" style="background-image: url('/images/brownies.jpg')">
+                            <div class="w-full h-full bg-black/30 rounded-2xl flex items-center justify-center">
+                                <div class="text-center">
+                                    <div class="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center mx-auto mb-4">
+                                        <svg class="w-10 h-10 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-2xl font-bold text-white drop-shadow-lg">Brownies Clásicos</h3>
+                                    <p class="text-white/90 drop-shadow-lg">Con Cacao Dul-Cesar Premium</p>
                                 </div>
-                                <h3 class="text-2xl font-bold text-gray-800">Torta de Chocolate</h3>
-                                <p class="text-gray-600">Con Cacao Dul-Cesar Premium</p>
                             </div>
                         </div>
                     </div>
@@ -856,22 +869,24 @@ function toggleAdditionalCategories() {
                     </div>
                 </div>
 
-                {{-- Flyer 1: Receta --}}
+                {{-- Flyer 2: Galletas de Avena --}}
                 <div class="flyer-card bg-white rounded-3xl p-8 shadow-2xl hover:shadow-orange-500/10 transition-all duration-500">
                     {{-- Header del Flyer --}}
                     <div class="relative mb-6">
                         <div class="recipe-badge absolute top-4 right-4 px-4 py-2 rounded-full text-white font-bold text-sm">
                             NUEVA RECETA
                         </div>
-                        <div class="w-full h-48 bg-gradient-to-br from-orange-200 to-orange-300 rounded-2xl flex items-center justify-center">
-                            <div class="text-center">
-                                <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
-                                    <svg class="w-10 h-10 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-                                    </svg>
+                        <div class="w-full h-48 bg-cover bg-center rounded-2xl" style="background-image: url('/images/galletadeavena.jpg')">
+                            <div class="w-full h-full bg-black/30 rounded-2xl flex items-center justify-center">
+                                <div class="text-center">
+                                    <div class="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center mx-auto mb-4">
+                                        <svg class="w-10 h-10 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-2xl font-bold text-white drop-shadow-lg">Galletas de Avena</h3>
+                                    <p class="text-white/90 drop-shadow-lg">Con Azúcar Dul-Cesar Premium</p>
                                 </div>
-                                <h3 class="text-2xl font-bold text-gray-800">Torta de Chocolate</h3>
-                                <p class="text-gray-600">Con Cacao Dul-Cesar Premium</p>
                             </div>
                         </div>
                     </div>
@@ -888,16 +903,16 @@ function toggleAdditionalCategories() {
                             </h4>
                             <div class="space-y-2">
                                 <div class="ingredient-item pl-4 py-2 rounded">
-                                    <span class="font-semibold text-orange-600">Cacao Dul-Cesar</span> - 200g
-                                </div>
-                                <div class="ingredient-item pl-4 py-2 rounded">
                                     <span class="font-semibold text-orange-600">Azúcar Dul-Cesar</span> - 150g
                                 </div>
                                 <div class="ingredient-item pl-4 py-2 rounded">
-                                    Huevos - 3 unidades
+                                    Avena - 200g
                                 </div>
                                 <div class="ingredient-item pl-4 py-2 rounded">
-                                    Harina - 200g
+                                    Harina - 150g
+                                </div>
+                                <div class="ingredient-item pl-4 py-2 rounded">
+                                    Mantequilla - 100g
                                 </div>
                             </div>
                         </div>
@@ -913,15 +928,15 @@ function toggleAdditionalCategories() {
                             <div class="space-y-3">
                                 <div class="flex items-start">
                                     <div class="step-number">1</div>
-                                    <p class="text-gray-700">Mezcla los ingredientes secos</p>
+                                    <p class="text-gray-700">Mezcla avena, harina y azúcar</p>
                                 </div>
                                 <div class="flex items-start">
                                     <div class="step-number">2</div>
-                                    <p class="text-gray-700">Incorpora huevos y líquidos</p>
+                                    <p class="text-gray-700">Incorpora mantequilla derretida</p>
                                 </div>
                                 <div class="flex items-start">
                                     <div class="step-number">3</div>
-                                    <p class="text-gray-700">Hornea 25 min a 180°C</p>
+                                    <p class="text-gray-700">Hornea 15 min a 180°C</p>
                                 </div>
                             </div>
                         </div>
