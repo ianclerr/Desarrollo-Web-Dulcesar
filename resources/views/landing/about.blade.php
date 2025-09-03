@@ -15,7 +15,7 @@
         
         {{-- Contenido del hero --}}
         <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
-            <h1 class="font-display text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+            <h1 class="font-lobster text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight">
                 Nuestra <span class="text-red-300">Historia</span>
             </h1>
             <p class="text-xl lg:text-2xl text-white/90 mb-8 font-light leading-relaxed">
@@ -35,7 +35,7 @@
     {{-- Historia de la empresa --}}
     <section id="historia" class="py-20 lg:py-32 relative overflow-hidden">
         {{-- Fondo con cuadrille totalmente visible --}}
-        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/imagenes/cuadrille tipo 1.jpeg.jpg')"></div>
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/cuadrille2.jpeg')"></div>
         {{-- Faders para transición suave --}}
         <div class="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-red-700/70 to-transparent pointer-events-none"></div>
         <div class="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-red-700/70 to-transparent pointer-events-none"></div>
@@ -43,30 +43,38 @@
         <div class="container mx-auto px-4 lg:px-8 relative z-10">
             <div class="max-w-6xl mx-auto">
                 <div class="text-center mb-16 reveal-on-scroll">
-                    <div class="inline-block bg-white/70 backdrop-blur-xs rounded-2xl px-6 py-5">
-                        <h2 class="font-display text-4xl lg:text-6xl font-bold text-gray-800 leading-tight">
+                    <div class="inline-block bg-white/70 backdrop-blur-xs rounded-2xl px-6 py-5 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
+                        <div class="relative z-10">
+                        <h2 class="font-lobster text-4xl lg:text-6xl font-bold text-gray-800 leading-tight">
                             <span class="text-red-600">Tradición, calidad y compromiso</span><br>
                             con el sabor paraguayo
                         </h2>
                         <p class="mt-4 text-xl lg:text-2xl text-gray-700 font-light leading-relaxed max-w-4xl mx-auto">
                             Dul-Cesar ICSA, empresa Paraguaya con más de 40 años de trayectoria, dedicada a la producción, fraccionamiento, envasado, distribución e importación de productos alimenticios.
                         </p>
+                        </div>
                     </div>
                 </div>
 
                 {{-- Grid de historia --}}
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
                     <div class="reveal-on-scroll">
-                        <h3 class="font-display text-3xl font-bold text-gray-800 mb-4 inline-block bg-white/80 rounded-xl px-3 py-1">Nuestros Orígenes</h3>
-                        <div class="bg-white/70 backdrop-blur-xs rounded-2xl px-6 py-5 mb-6">
+                        <h3 class="font-lobster text-3xl font-bold text-gray-800 mb-4 inline-block bg-white/80 rounded-xl px-3 py-1">Nuestros Orígenes</h3>
+                        <div class="bg-white/70 backdrop-blur-xs rounded-2xl px-6 py-5 mb-6 relative overflow-hidden">
+                            <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
+                            <div class="relative z-10">
                             <p class="text-lg text-gray-700 leading-relaxed mb-4">
                                 En el año 1982, en un pequeño hogar, bajo la sombra de un árbol de mango nacía una pasión impulsada por una visión clara: Ofrecer productos alimenticios, elaborados con dedicación, respeto por la tradición y un profundo compromiso.
                             </p>
                             <p class="text-lg text-gray-700 leading-relaxed m-0">
                                 Así surgió Dul-Cesar, una marca que con el paso del tiempo se consolidó como referente en la industria nacional de alimentos. La mermelada de guayaba tradicional fue el primer producto en salir al mercado, rápidamente conquistó los hogares paraguayos por su sabor auténtico y su calidad constante.
                             </p>
+                            </div>
                         </div>
-                        <div class="inline-flex items-center space-x-4 bg-white/70 backdrop-blur-xs rounded-2xl px-4 py-3">
+                        <div class="inline-flex items-center space-x-4 bg-white/70 backdrop-blur-xs rounded-2xl px-4 py-3 relative overflow-hidden">
+                            <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
+                            <div class="relative z-10 flex items-center space-x-4">
                             <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center">
                                 <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
@@ -76,12 +84,13 @@
                                 <h4 class="font-semibold text-gray-800">Más de 40 años</h4>
                                 <p class="text-gray-700">De experiencia y tradición</p>
                             </div>
+                            </div>
                         </div>
                     </div>
                     <div class="reveal-on-scroll">
                         <div class="relative">
                             <div class="bg-red-600 rounded-3xl p-8 text-white shadow-2xl">
-                                <h4 class="font-display text-2xl font-bold mb-4">Nuestros Valores</h4>
+                                <h4 class="font-lobster text-2xl font-bold mb-4">Nuestros Valores</h4>
                                 <div class="space-y-4">
                                     <div class="flex items-start space-x-3">
                                         <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
@@ -139,14 +148,14 @@
     {{-- Línea de tiempo --}}
     <section class="py-20 lg:py-32 relative overflow-hidden">
         {{-- Fondo con cuadrille --}}
-        <div class="absolute inset-0 bg-cover bg-center opacity-15" style="background-image: url('/images/imagenes/cuadrille tipo 1.jpeg.jpg')"></div>
+        <div class="absolute inset-0 bg-cover bg-center opacity-15" style="background-image: url('/images/cuadrille2.jpeg')"></div>
         
         {{-- Overlay muy sutil sin raya visible --}}
         <div class="absolute inset-0 bg-gradient-to-br from-orange-50/30 to-amber-50/30"></div>
         
         <div class="container mx-auto px-4 lg:px-8 relative z-10">
             <div class="text-center mb-16 reveal-on-scroll">
-                <h3 class="font-display text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+                <h3 class="font-lobster text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
                     Nuestra <span class="text-red-600">Evolución</span>
                 </h3>
                 <p class="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -165,7 +174,7 @@
                         <div class="flex items-center reveal-on-scroll">
                             <div class="w-1/2 pr-8 text-right">
                                 <div class="bg-white/80 rounded-2xl p-6 shadow-xl">
-                                    <h4 class="font-display text-2xl font-bold text-gray-800 mb-2">1982</h4>
+                                    <h4 class="font-lobster text-2xl font-bold text-gray-800 mb-2">1982</h4>
                                     <h5 class="font-semibold text-red-600 mb-2">Fundación de Dul-Cesar</h5>
                                     <p class="text-gray-600">Nacimos en un pequeño hogar bajo la sombra de un árbol de mango, con la visión de ofrecer productos alimenticios elaborados con dedicación y respeto por la tradición.</p>
                                 </div>
@@ -180,7 +189,7 @@
                             <div class="w-8 h-8 bg-red-500 rounded-full border-4 border-white shadow-lg z-10"></div>
                             <div class="w-1/2 pl-8">
                                 <div class="bg-white/80 rounded-2xl p-6 shadow-xl">
-                                    <h4 class="font-display text-2xl font-bold text-gray-800 mb-2">1985</h4>
+                                    <h4 class="font-lobster text-2xl font-bold text-gray-800 mb-2">1985</h4>
                                     <h5 class="font-semibold text-red-600 mb-2">Primeros Productos</h5>
                                     <p class="text-gray-600">La mermelada de guayaba tradicional conquistó los hogares paraguayos, seguida por el dulce de mamón y dulce de batata tradicional.</p>
                                 </div>
@@ -191,7 +200,7 @@
                         <div class="flex items-center reveal-on-scroll">
                             <div class="w-1/2 pr-8 text-right">
                                 <div class="bg-white/80 rounded-2xl p-6 shadow-xl">
-                                    <h4 class="font-display text-2xl font-bold text-gray-800 mb-2">1990</h4>
+                                    <h4 class="font-lobster text-2xl font-bold text-gray-800 mb-2">1990</h4>
                                     <h5 class="font-semibold text-red-600 mb-2">Crecimiento y Expansión</h5>
                                     <p class="text-gray-600">Con el liderazgo de Anibal Ramón Zimardi y Ana Maria Riveros de Zimardi, Dul-Cesar creció con paso firme, apostando a la mejora continua.</p>
                                 </div>
@@ -206,7 +215,7 @@
                             <div class="w-8 h-8 bg-red-500 rounded-full border-4 border-white shadow-lg z-10"></div>
                             <div class="w-1/2 pl-8">
                                 <div class="bg-white/80 rounded-2xl p-6 shadow-xl">
-                                    <h4 class="font-display text-2xl font-bold text-gray-800 mb-2">2000</h4>
+                                    <h4 class="font-lobster text-2xl font-bold text-gray-800 mb-2">2000</h4>
                                     <h5 class="font-semibold text-red-600 mb-2">Expansión del Portafolio</h5>
                                     <p class="text-gray-600">Ampliamos nuestra gama de productos incluyendo mermeladas, dulces, aderezos, salsas, vinagres y más productos alimenticios.</p>
                                 </div>
@@ -217,7 +226,7 @@
                         <div class="flex items-center reveal-on-scroll">
                             <div class="w-1/2 pr-8 text-right">
                                 <div class="bg-white/80 rounded-2xl p-6 shadow-xl">
-                                    <h4 class="font-display text-2xl font-bold text-gray-800 mb-2">2010</h4>
+                                    <h4 class="font-lobster text-2xl font-bold text-gray-800 mb-2">2010</h4>
                                     <h5 class="font-semibold text-red-600 mb-2">200+ Productos</h5>
                                     <p class="text-gray-600">Alcanzamos más de 200 productos en nuestro catálogo, abasteciendo puntos de venta en todo Paraguay con el objetivo de ganar el corazón de los consumidores.</p>
                                 </div>
@@ -232,7 +241,7 @@
                             <div class="w-8 h-8 bg-red-500 rounded-full border-4 border-white shadow-lg z-10"></div>
                             <div class="w-1/2 pl-8">
                                 <div class="bg-red-600 rounded-2xl p-6 shadow-xl text-white">
-                                    <h4 class="font-display text-2xl font-bold mb-2">2025</h4>
+                                    <h4 class="font-lobster text-2xl font-bold mb-2">2025</h4>
                                     <h5 class="font-semibold mb-2">Presente y Futuro</h5>
                                     <p class="text-white/90">Continuamos proyectándonos con una identidad renovada y un enfoque estratégico orientado a mercados más exigentes, sin perder nuestra esencia familiar ni nuestra raíz profundamente paraguaya.</p>
                                 </div>
@@ -252,7 +261,7 @@
                 <div class="mb-20 reveal-on-scroll">
                     <div class="relative overflow-hidden rounded-3xl p-8 lg:p-12">
                         {{-- Fondo con cuadrille --}}
-                        <div class="absolute inset-0 bg-cover bg-center opacity-15" style="background-image: url('/images/imagenes/cuadrille tipo 1.jpeg.jpg')"></div>
+                        <div class="absolute inset-0 bg-cover bg-center opacity-15" style="background-image: url('/images/cuadrille2.jpeg')"></div>
                         
                         {{-- Overlay muy sutil sin raya visible --}}
                         <div class="absolute inset-0 bg-gradient-to-r from-orange-50/30 to-amber-50/30"></div>
@@ -260,7 +269,7 @@
                         <div class="relative z-10">
                             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                                 <div>
-                                    <h3 class="font-display text-3xl font-bold text-gray-800 mb-6">El Liderazgo de Nuestros Fundadores</h3>
+                                    <h3 class="font-lobster text-3xl font-bold text-gray-800 mb-6">El Liderazgo de Nuestros Fundadores</h3>
                                     <p class="text-lg text-gray-600 leading-relaxed mb-6">
                                         Con el liderazgo de los fundadores, <strong>Anibal Ramón Zimardi</strong> y <strong>Ana Maria Riveros de Zimardi</strong>, impulsando el inicio con sus labores. Dul-Cesar fue creciendo con paso firme, apostando a la mejora continua, la expansión del portafolio y la inversión en procesos productivos eficientes y sostenibles.
                                     </p>
@@ -274,7 +283,7 @@
                                             <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
                                         </svg>
                                     </div>
-                                    <h4 class="font-display text-2xl font-bold text-gray-800 mb-2">Fundadores</h4>
+                                    <h4 class="font-lobster text-2xl font-bold text-gray-800 mb-2">Fundadores</h4>
                                     <p class="text-gray-600">Anibal Ramón Zimardi</p>
                                     <p class="text-gray-600">Ana Maria Riveros de Zimardi</p>
                                 </div>
@@ -287,13 +296,13 @@
                 <div class="mb-20 reveal-on-scroll">
                     <div class="relative overflow-hidden rounded-3xl p-8 lg:p-12 shadow-xl">
                         {{-- Fondo con cuadrille --}}
-                        <div class="absolute inset-0 bg-cover bg-center opacity-15" style="background-image: url('/images/imagenes/cuadrille tipo 1.jpeg.jpg')"></div>
+                        <div class="absolute inset-0 bg-cover bg-center opacity-15" style="background-image: url('/images/cuadrille2.jpeg')"></div>
                         
                         {{-- Overlay muy sutil sin raya visible --}}
                         <div class="absolute inset-0 bg-gradient-to-br from-orange-50/30 to-amber-50/30"></div>
                         
                         <div class="relative z-10">
-                            <h3 class="font-display text-3xl font-bold text-gray-800 mb-6 text-center">Nuestro Compromiso Actual</h3>
+                            <h3 class="font-lobster text-3xl font-bold text-gray-800 mb-6 text-center">Nuestro Compromiso Actual</h3>
                             <p class="text-lg text-gray-600 leading-relaxed mb-8 text-center max-w-4xl mx-auto">
                                 Actualmente, Dul-Cesar ofrece una amplia gama de alimentos que incluyen mermeladas, dulces, aderezos, salsas, vinagres y más productos que buscan simplificar la vida del consumidor, manteniendo como prioridad el equilibrio entre innovación, sabor y respeto por los valores que nos dieron origen.
                             </p>
@@ -333,7 +342,7 @@
                 {{-- Sección final de la historia --}}
                 <div class="reveal-on-scroll">
                     <div class="bg-red-600 rounded-3xl p-8 lg:p-12 text-white text-center">
-                        <h3 class="font-display text-3xl font-bold mb-6">Nuestra Visión de Futuro</h3>
+                        <h3 class="font-lobster text-3xl font-bold mb-6">Nuestra Visión de Futuro</h3>
                         <p class="text-lg leading-relaxed mb-6 max-w-4xl mx-auto">
                             A lo largo de más de 40 años de trayectoria, hemos logrado consolidar un modelo de gestión que combina tradición y tecnología, priorizando la seguridad alimentaria, el desarrollo de proveedores locales y el fortalecimiento de vínculos con nuestros clientes, tanto a nivel nacional como internacional.
                         </p>
@@ -354,7 +363,7 @@
     {{-- Compromiso con la calidad --}}
     <section class="py-20 lg:py-32 relative overflow-hidden">
         {{-- Fondo con cuadrille --}}
-        <div class="absolute inset-0 bg-cover bg-center opacity-15" style="background-image: url('/images/imagenes/cuadrille tipo 1.jpeg.jpg')"></div>
+        <div class="absolute inset-0 bg-cover bg-center opacity-15" style="background-image: url('/images/cuadrille2.jpeg')"></div>
         
         {{-- Overlay muy sutil sin raya visible --}}
         <div class="absolute inset-0 bg-gradient-to-br from-orange-50/30 to-amber-50/30"></div>
@@ -362,7 +371,7 @@
         <div class="container mx-auto px-4 lg:px-8 relative z-10">
             <div class="max-w-6xl mx-auto">
                 <div class="text-center mb-16 reveal-on-scroll">
-                    <h3 class="font-display text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+                    <h3 class="font-lobster text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
                         Nuestro <span class="text-red-600">Compromiso</span><br>
                         con la Calidad
                     </h3>
@@ -373,69 +382,87 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {{-- Proceso 1 --}}
-                    <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal-on-scroll">
+                    <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal-on-scroll relative overflow-hidden">
+                        <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
+                        <div class="relative z-10">
                         <div class="w-16 h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-full flex items-center justify-center mb-6">
                             <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                             </svg>
                         </div>
-                        <h4 class="font-display text-xl font-bold text-gray-800 mb-4">Selección de Ingredientes</h4>
+                        <h4 class="font-lobster text-xl font-bold text-gray-800 mb-4">Selección de Ingredientes</h4>
                         <p class="text-gray-600 leading-relaxed">Trabajamos únicamente con proveedores certificados y seleccionamos los mejores ingredientes naturales para garantizar la calidad de nuestros productos.</p>
+                        </div>
                     </div>
 
                     {{-- Proceso 2 --}}
-                    <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal-on-scroll">
+                    <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal-on-scroll relative overflow-hidden">
+                        <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
+                        <div class="relative z-10">
                         <div class="w-16 h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-full flex items-center justify-center mb-6">
                             <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M4 3a2 2 0 100 4h12a2 2 0 100-4H4zM4 9a1 1 0 000 2v5a2 2 0 002 2h8a2 2 0 002-2v-5a1 1 0 100-2H4z"/>
                             </svg>
                         </div>
-                        <h4 class="font-display text-xl font-bold text-gray-800 mb-4">Procesos Artesanales</h4>
+                        <h4 class="font-lobster text-xl font-bold text-gray-800 mb-4">Procesos Artesanales</h4>
                         <p class="text-gray-600 leading-relaxed">Mantenemos las técnicas tradicionales de elaboración, combinándolas con tecnología moderna para asegurar consistencia y calidad.</p>
+                        </div>
                     </div>
 
                     {{-- Proceso 3 --}}
-                    <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal-on-scroll">
+                    <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal-on-scroll relative overflow-hidden">
+                        <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
+                        <div class="relative z-10">
                         <div class="w-16 h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-full flex items-center justify-center mb-6">
                             <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                             </svg>
                         </div>
-                        <h4 class="font-display text-xl font-bold text-gray-800 mb-4">Control de Calidad</h4>
+                        <h4 class="font-lobster text-xl font-bold text-gray-800 mb-4">Control de Calidad</h4>
                         <p class="text-gray-600 leading-relaxed">Cada lote de producción pasa por múltiples controles de calidad, desde la recepción de materias primas hasta el producto final.</p>
+                        </div>
                     </div>
 
                     {{-- Proceso 4 --}}
-                    <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal-on-scroll">
+                    <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal-on-scroll relative overflow-hidden">
+                        <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
+                        <div class="relative z-10">
                         <div class="w-16 h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-full flex items-center justify-center mb-6">
                             <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4z"/>
                             </svg>
                         </div>
-                        <h4 class="font-display text-xl font-bold text-gray-800 mb-4">Innovación Continua</h4>
+                        <h4 class="font-lobster text-xl font-bold text-gray-800 mb-4">Innovación Continua</h4>
                         <p class="text-gray-600 leading-relaxed">Constantemente investigamos y desarrollamos nuevos productos, adaptándonos a las tendencias y necesidades del mercado.</p>
+                        </div>
                     </div>
 
                     {{-- Proceso 5 --}}
-                    <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal-on-scroll">
+                    <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal-on-scroll relative overflow-hidden">
+                        <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
+                        <div class="relative z-10">
                         <div class="w-16 h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-full flex items-center justify-center mb-6">
                             <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
                             </svg>
                         </div>
-                        <h4 class="font-display text-xl font-bold text-gray-800 mb-4">Equipo Capacitado</h4>
+                        <h4 class="font-lobster text-xl font-bold text-gray-800 mb-4">Equipo Capacitado</h4>
                         <p class="text-gray-600 leading-relaxed">Nuestro personal recibe capacitación continua en seguridad alimentaria, procesos de calidad y nuevas tecnologías.</p>
+                        </div>
                     </div>
 
                     {{-- Proceso 6 --}}
-                    <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal-on-scroll">
+                    <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal-on-scroll relative overflow-hidden">
+                        <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
+                        <div class="relative z-10">
                         <div class="w-16 h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-full flex items-center justify-center mb-6">
                             <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
                             </svg>
                         </div>
-                        <h4 class="font-display text-xl font-bold text-gray-800 mb-4">Certificaciones</h4>
+                        <h4 class="font-lobster text-xl font-bold text-gray-800 mb-4">Certificaciones</h4>
                         <p class="text-gray-600 leading-relaxed">Contamos con todas las certificaciones necesarias: ISO 9001, HACCP, y cumplimos con las normativas sanitarias nacionales e internacionales.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -445,14 +472,14 @@
         {{-- Equipo y Planta --}}
     <section id="equipo" class="py-20 lg:py-32 relative overflow-hidden">
         {{-- Fondo con cuadrille --}}
-        <div class="absolute inset-0 bg-cover bg-center opacity-15" style="background-image: url('/images/imagenes/cuadrille tipo 1.jpeg.jpg')"></div>
+        <div class="absolute inset-0 bg-cover bg-center opacity-15" style="background-image: url('/images/cuadrille2.jpeg')"></div>
         
         {{-- Overlay muy sutil sin raya visible --}}
         <div class="absolute inset-0 bg-gradient-to-br from-orange-50/30 to-amber-50/30"></div>
         
         <div class="container mx-auto px-4 lg:px-8 relative z-10">
             <div class="text-center mb-16 reveal-on-scroll">
-                <h3 class="font-display text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+                <h3 class="font-lobster text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
                     Nuestro <span class="text-red-600">Equipo</span><br>
                     y Nuestras <span class="text-red-600">Instalaciones</span>
                 </h3>
@@ -464,7 +491,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
                 {{-- Información del equipo --}}
                 <div class="reveal-on-scroll">
-                    <h4 class="font-display text-3xl font-bold text-gray-800 mb-6">El Corazón de DulCesar</h4>
+                    <h4 class="font-lobster text-3xl font-bold text-gray-800 mb-6">El Corazón de DulCesar</h4>
                     <p class="text-lg text-gray-600 leading-relaxed mb-6">
                         Nuestro equipo está compuesto por más de 50 profesionales apasionados, cada uno especializado en su área pero unidos por el mismo objetivo: crear productos excepcionales que endulcen momentos especiales.
                     </p>
@@ -507,7 +534,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <h5 class="font-display text-xl font-bold mb-2">Nuestro Equipo</h5>
+                            <h5 class="font-lobster text-xl font-bold mb-2">Nuestro Equipo</h5>
                             <p class="text-white/90">Profesionales apasionados por la excelencia y la tradición artesanal.</p>
                         </div>
                     </div>
@@ -517,7 +544,9 @@
             {{-- Instalaciones --}}
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {{-- Planta principal --}}
-                <div class="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal-on-scroll">
+                <div class="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal-on-scroll relative overflow-hidden">
+                    <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
+                    <div class="relative z-10">
                     <div class="aspect-w-16 aspect-h-9 rounded-t-2xl overflow-hidden">
                         <div class="w-full h-48 bg-red-100 flex items-center justify-center">
                             <div class="text-center">
@@ -529,13 +558,16 @@
                         </div>
                     </div>
                     <div class="p-6">
-                        <h5 class="font-display text-xl font-bold text-gray-800 mb-2">Planta Principal</h5>
+                        <h5 class="font-lobster text-xl font-bold text-gray-800 mb-2">Planta Principal</h5>
                         <p class="text-gray-600 text-sm">Nuestras instalaciones principales en San Lorenzo, donde se elaboran la mayoría de nuestros productos artesanales.</p>
+                    </div>
                     </div>
                 </div>
 
                 {{-- Laboratorio --}}
-                <div class="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal-on-scroll">
+                <div class="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal-on-scroll relative overflow-hidden">
+                    <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
+                    <div class="relative z-10">
                     <div class="aspect-w-16 aspect-h-9 rounded-t-2xl overflow-hidden">
                         <div class="w-full h-48 bg-red-100 flex items-center justify-center">
                             <div class="text-center">
@@ -547,13 +579,16 @@
                         </div>
                     </div>
                     <div class="p-6">
-                        <h5 class="font-display text-xl font-bold text-gray-800 mb-2">Laboratorio de Calidad</h5>
+                        <h5 class="font-lobster text-xl font-bold text-gray-800 mb-2">Laboratorio de Calidad</h5>
                         <p class="text-gray-600 text-sm">Equipado con tecnología de vanguardia para garantizar la calidad y seguridad de todos nuestros productos.</p>
+                    </div>
                     </div>
                 </div>
 
                 {{-- Almacén --}}
-                <div class="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal-on-scroll">
+                <div class="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal-on-scroll relative overflow-hidden">
+                    <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
+                    <div class="relative z-10">
                     <div class="aspect-w-16 aspect-h-9 rounded-t-2xl overflow-hidden">
                         <div class="w-full h-48 bg-red-100 flex items-center justify-center">
                             <div class="text-center">
@@ -565,8 +600,9 @@
                         </div>
                     </div>
                     <div class="p-6">
-                        <h5 class="font-display text-xl font-bold text-gray-800 mb-2">Almacén y Logística</h5>
+                        <h5 class="font-lobster text-xl font-bold text-gray-800 mb-2">Almacén y Logística</h5>
                         <p class="text-gray-600 text-sm">Sistema de almacenamiento moderno que garantiza la frescura y calidad de nuestros productos durante todo el proceso.</p>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -581,7 +617,7 @@
         
         <div class="container mx-auto px-4 lg:px-8 text-center relative z-10">
             <div class="max-w-4xl mx-auto reveal-on-scroll">
-                <h6 class="font-display text-4xl lg:text-6xl font-bold text-white mb-8 leading-tight">
+                <h6 class="font-lobster text-4xl lg:text-6xl font-bold text-white mb-8 leading-tight">
                     ¿Querés conocer más<br>
                     <span class="text-yellow-300">sobre nosotros?</span>
                 </h6>

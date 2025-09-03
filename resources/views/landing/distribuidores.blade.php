@@ -35,8 +35,10 @@
     <div class="container mx-auto px-4 lg:px-8 relative z-10 pt-10 lg:pt-16">
         {{-- Encabezado Principal --}}
         <div class="text-center mb-20">
-            <div class="inline-block bg-white/70 backdrop-blur-xs rounded-2xl px-6 py-5">
-                <h1 class="font-display text-5xl lg:text-7xl font-bold text-gray-800 mb-4 leading-tight" style="animation-delay: 0.2s;">
+            <div class="inline-block bg-white/70 backdrop-blur-xs rounded-2xl px-6 py-5 relative overflow-hidden">
+                <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
+                <div class="relative z-10">
+                <h1 class="font-lobster text-5xl lg:text-7xl font-bold text-gray-800 mb-4 leading-tight" style="animation-delay: 0.2s;">
                     <span class="text-gray-800">Únete a Nuestra</span><br>
                     <span class="text-red-600">Red de Distribución</span>
                 </h1>
@@ -44,6 +46,7 @@
                     Conviértete en nuestro socio comercial y accede a productos de calidad premium 
                     con condiciones especiales para mayoristas y distribuidores
                 </p>
+                </div>
             </div>
         </div>
 
@@ -56,7 +59,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/>
                     </svg>
                 </div>
-                <h3 class="font-display text-2xl font-bold text-gray-800 mb-4">Precios Mayoristas</h3>
+                <h3 class="font-lobster text-2xl font-bold text-gray-800 mb-4">Precios Mayoristas</h3>
                 <p class="text-gray-700 leading-relaxed">
                     Accede a precios especiales con descuentos progresivos según volúmenes de compra. 
                     Márgenes atractivos garantizados.
@@ -70,7 +73,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
                     </svg>
                 </div>
-                <h3 class="font-display text-2xl font-bold text-gray-800 mb-4">Soporte Comercial</h3>
+                <h3 class="font-lobster text-2xl font-bold text-gray-800 mb-4">Soporte Comercial</h3>
                 <p class="text-gray-700 leading-relaxed">
                     Equipo dedicado de ventas, material promocional, capacitación de productos 
                     y apoyo en estrategias de marketing.
@@ -84,7 +87,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                     </svg>
                 </div>
-                <h3 class="font-display text-2xl font-bold text-gray-800 mb-4">Calidad Garantizada</h3>
+                <h3 class="font-lobster text-2xl font-bold text-gray-800 mb-4">Calidad Garantizada</h3>
                 <p class="text-gray-700 leading-relaxed">
                     Productos con certificaciones de calidad, procesos artesanales tradicionales 
                     y garantía de frescura en cada entrega.
@@ -97,7 +100,7 @@
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 {{-- Contenido izquierdo --}}
                 <div>
-                    <h2 class="font-display text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+                    <h2 class="font-lobster text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
                         ¿Listo para <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">Empezar?</span>
                     </h2>
                     <p class="text-xl text-gray-700 mb-8 leading-relaxed">
@@ -214,10 +217,12 @@
 
 {{-- Modal de Formulario de Contacto --}}
 <div id="contactModal" class="fixed inset-0 bg-black/50 z-50 hidden items-center justify-center p-4">
-    <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+    <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
+        <div class="relative z-10">
         <div class="p-8">
             <div class="flex items-center justify-between mb-6">
-                <h3 class="font-display text-2xl font-bold text-gray-800">Contacto Comercial</h3>
+                <h3 class="font-lobster text-2xl font-bold text-gray-800">Contacto Comercial</h3>
                 <button onclick="closeContactModal()" class="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
                     <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
@@ -268,6 +273,7 @@
                     Enviar Solicitud
                 </button>
             </form>
+        </div>
         </div>
     </div>
 </div>

@@ -74,7 +74,7 @@
     {{-- Propuesta de valor con cuadrille --}}
     <section class="py-20 lg:py-32 relative overflow-hidden">
         {{-- Fondo con cuadrille --}}
-        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/imagenes/cuadrille tipo 1.jpeg.jpg')"></div>
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/cuadrille2.jpeg')"></div>
         {{-- Fade inferior para transición suave con la sección siguiente --}}
         <div class="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-red-700/70 to-transparent pointer-events-none"></div>
         {{-- Faders para transición suave con la sección anterior y siguiente --}}
@@ -83,14 +83,17 @@
         
         <div class="container mx-auto px-4 lg:px-8 text-center relative z-10">
             <div class="reveal-on-scroll max-w-4xl mx-auto">
-                <div class="inline-block bg-white/70 backdrop-blur-xs rounded-2xl px-6 py-5">
-                    <h3 class="font-display text-4xl lg:text-6xl font-bold text-gray-800 leading-tight">
+                <div class="inline-block bg-white/70 backdrop-blur-xs rounded-2xl px-6 py-5 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
+                    <div class="relative z-10">
+                    <h3 class="font-lobster text-4xl lg:text-6xl font-bold text-gray-800 leading-tight">
                         Más de <span class="text-red-600">40 años</span><br>
                         endulzando momentos especiales
                     </h3>
                     <p class="mt-4 text-xl lg:text-2xl text-gray-700 font-light leading-relaxed">
                         Cuatro décadas perfeccionando el arte de los dulces artesanales, creando momentos inolvidables y endulzando la vida de familias en todo Paraguay.
                     </p>
+                    </div>
                 </div>
                 
                 {{-- Elementos decorativos con cuadrille --}}
@@ -107,7 +110,7 @@
     <section class="py-20 lg:py-32 bg-red-50">
         <div class="container mx-auto px-4 lg:px-8">
             <div class="text-center mb-16 reveal-on-scroll">
-                <h4 class="font-display text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+                <h4 class="font-lobster text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
                     Productos <span class="text-orange-600">Destacados</span>
                 </h4>
                 <p class="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -128,7 +131,7 @@
                                         <p class="text-gray-600 font-semibold">Mermelada de Guayaba</p>
                                     </div>
                                 </div>
-                                <h5 class="font-display text-2xl font-bold text-gray-800 mb-4">Mermelada de Guayaba</h5>
+                                <h5 class="font-lobster text-2xl font-bold text-gray-800 mb-4">Mermelada de Guayaba</h5>
                                 <p class="text-gray-600 mb-6">Nuestro producto estrella, elaborado con guayabas frescas y receta tradicional.</p>
                                 <div class="flex justify-between items-center">
                                     <span class="text-red-600 font-bold text-lg">Premium</span>
@@ -148,7 +151,7 @@
                                         <p class="text-gray-600 font-semibold">Dulce de Mamón</p>
                                     </div>
                                 </div>
-                                <h5 class="font-display text-2xl font-bold text-gray-800 mb-4">Dulce de Mamón</h5>
+                                <h5 class="font-lobster text-2xl font-bold text-gray-800 mb-4">Dulce de Mamón</h5>
                                 <p class="text-gray-600 mb-6">Elaborado con mamón maduro y azúcar, siguiendo recetas ancestrales.</p>
                                 <div class="flex justify-between items-center">
                                     <span class="text-red-600 font-bold text-lg">Tradicional</span>
@@ -168,7 +171,7 @@
                                         <p class="text-gray-600 font-semibold">Aderezo Especial</p>
                                     </div>
                                 </div>
-                                <h5 class="font-display text-2xl font-bold text-gray-800 mb-4">Aderezo Especial</h5>
+                                <h5 class="font-lobster text-2xl font-bold text-gray-800 mb-4">Aderezo Especial</h5>
                                 <p class="text-gray-600 mb-6">Perfecto para acompañar tus comidas con un toque especial de sabor.</p>
                                 <div class="flex justify-between items-center">
                                     <span class="text-red-600 font-bold text-lg">Gourmet</span>
@@ -188,7 +191,7 @@
                                         <p class="text-gray-600 font-semibold">Mermelada Light</p>
                                     </div>
                                 </div>
-                                <h5 class="font-display text-2xl font-bold text-gray-800 mb-4">Mermelada Light</h5>
+                                <h5 class="font-lobster text-2xl font-bold text-gray-800 mb-4">Mermelada Light</h5>
                                 <p class="text-gray-600 mb-6">Sabor auténtico con menos calorías, perfecta para cuidar tu salud.</p>
                                 <div class="flex justify-between items-center">
                                     <span class="text-red-600 font-bold text-lg">Light</span>
@@ -219,17 +222,20 @@
     {{-- Sección de tradición con cuadrille --}}
     <section class="py-20 lg:py-32 relative overflow-hidden">
         {{-- Fondo con cuadrille (sin opacidad) --}}
-        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/imagenes/cuadrille tipo 1.jpeg.jpg')"></div>
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/cuadrille2.jpeg')"></div>
         
         <div class="container mx-auto px-4 lg:px-8 relative z-10">
             <div class="text-center mb-16 reveal-on-scroll">
-                <div class="inline-block bg-white/80 backdrop-blur-xs rounded-2xl px-6 py-5">
-                    <h4 class="font-display text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
+                <div class="inline-block bg-white/80 backdrop-blur-xs rounded-2xl px-6 py-5 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
+                    <div class="relative z-10">
+                    <h4 class="font-lobster text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
                         <span class="text-red-600">Tradición</span> y <span class="text-red-600">Calidad</span>
                     </h4>
                     <p class="text-xl text-gray-700 max-w-2xl mx-auto">
                         Nuestros productos reflejan la autenticidad del sabor paraguayo, elaborados con técnicas tradicionales y los mejores ingredientes
                     </p>
+                    </div>
                 </div>
             </div>
             
@@ -238,21 +244,21 @@
                 {{-- Característica 1 --}}
                 <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal-on-scroll">
                     <div class="w-20 h-20 cuadrille-pattern rounded-full mx-auto mb-6 border-4 border-orange-200 cuadrille-float"></div>
-                    <h5 class="font-display text-2xl font-bold text-gray-800 mb-4 text-center">Artesanal</h5>
+                    <h5 class="font-lobster text-2xl font-bold text-gray-800 mb-4 text-center">Artesanal</h5>
                     <p class="text-gray-600 text-center leading-relaxed">Cada producto es elaborado con técnicas tradicionales que preservan el auténtico sabor paraguayo.</p>
                 </div>
                 
                 {{-- Característica 2 --}}
                 <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal-on-scroll">
                     <div class="w-20 h-20 cuadrille-pattern rounded-full mx-auto mb-6 border-4 border-red-200 cuadrille-float" style="animation-delay: -1s;"></div>
-                    <h5 class="font-display text-2xl font-bold text-gray-800 mb-4 text-center">Natural</h5>
+                    <h5 class="font-lobster text-2xl font-bold text-gray-800 mb-4 text-center">Natural</h5>
                     <p class="text-gray-600 text-center leading-relaxed">Utilizamos solo ingredientes naturales de la más alta calidad, sin conservantes artificiales.</p>
                 </div>
                 
                 {{-- Característica 3 --}}
                 <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 reveal-on-scroll">
                     <div class="w-20 h-20 cuadrille-pattern rounded-full mx-auto mb-6 border-4 border-orange-200 cuadrille-float" style="animation-delay: -2s;"></div>
-                    <h5 class="font-display text-2xl font-bold text-gray-800 mb-4 text-center">Familiar</h5>
+                    <h5 class="font-lobster text-2xl font-bold text-gray-800 mb-4 text-center">Familiar</h5>
                     <p class="text-gray-600 text-center leading-relaxed">Más de 40 años de tradición familiar, transmitiendo sabores de generación en generación.</p>
                 </div>
             </div>
@@ -263,7 +269,7 @@
 <section class="py-20 lg:py-32 bg-red-50">
     <div class="container mx-auto px-4 lg:px-8">
         <div class="text-center mb-16 reveal-on-scroll">
-            <h4 class="font-display text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+            <h4 class="font-lobster text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
                 Nuestras <span class="text-red-600">Categorías</span>
             </h4>
             <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
@@ -325,7 +331,7 @@
                                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                             </svg>
                         </div>
-                        <h5 class="font-display text-2xl font-bold mb-3 group-hover:text-white transition-colors duration-300">Aderezos</h5>
+                        <h5 class="font-lobster text-2xl font-bold mb-3 group-hover:text-white transition-colors duration-300">Aderezos</h5>
                         <p class="text-white/90 text-base group-hover:text-white transition-colors duration-300">Línea premium artesanal</p>
                     </div>
                     <div class="text-white/70 text-sm font-medium mt-4 group-hover:text-white/90 transition-colors duration-300">25+ variedades</div>
@@ -342,7 +348,7 @@
                                 <circle cx="10" cy="10" r="8"/>
                             </svg>
                         </div>
-                        <h5 class="font-display text-2xl font-bold mb-3 group-hover:text-white transition-colors duration-300">Granos</h5>
+                        <h5 class="font-lobster text-2xl font-bold mb-3 group-hover:text-white transition-colors duration-300">Granos</h5>
                         <p class="text-white/90 text-base group-hover:text-white transition-colors duration-300">Alta calidad natural</p>
                     </div>
                     <div class="text-white/70 text-sm font-medium mt-4 group-hover:text-white/90 transition-colors duration-300">20+ opciones</div>
@@ -359,7 +365,7 @@
                                 <path d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V5a2 2 0 00-2-2H5z"/>
                             </svg>
                         </div>
-                        <h5 class="font-display text-2xl font-bold mb-3 group-hover:text-white transition-colors duration-300">Jugos</h5>
+                        <h5 class="font-lobster text-2xl font-bold mb-3 group-hover:text-white transition-colors duration-300">Jugos</h5>
                         <p class="text-white/90 text-base group-hover:text-white transition-colors duration-300">100% naturales</p>
                     </div>
                     <div class="text-white/70 text-sm font-medium mt-4 group-hover:text-white/90 transition-colors duration-300">15+ sabores</div>
@@ -376,7 +382,7 @@
                                 <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                             </svg>
                         </div>
-                        <h5 class="font-display text-2xl font-bold mb-3 group-hover:text-white transition-colors duration-300">Mermeladas</h5>
+                        <h5 class="font-lobster text-2xl font-bold mb-3 group-hover:text-white transition-colors duration-300">Mermeladas</h5>
                         <p class="text-white/90 text-base group-hover:text-white transition-colors duration-300">Artesanales tradicionales</p>
                     </div>
                     <div class="text-white/70 text-sm font-medium mt-4 group-hover:text-white/90 transition-colors duration-300">30+ variedades</div>
@@ -396,7 +402,7 @@
                                 <path d="M10 2L3 7v11a1 1 0 001 1h12a1 1 0 001-1V7l-7-5z"/>
                             </svg>
                         </div>
-                        <h5 class="font-display text-2xl font-bold mb-3 group-hover:text-white transition-colors duration-300">Mermeladas Light</h5>
+                        <h5 class="font-lobster text-2xl font-bold mb-3 group-hover:text-white transition-colors duration-300">Mermeladas Light</h5>
                         <p class="text-white/90 text-base group-hover:text-white transition-colors duration-300">Sabor sin culpa</p>
                     </div>
                     <div class="text-white/70 text-sm font-medium mt-4 group-hover:text-white/90 transition-colors duration-300">12+ opciones</div>
@@ -413,7 +419,7 @@
                                 <path d="M6 2a1 1 0 000 2h8a1 1 0 100-2H6zM3 6a1 1 0 011-1h12a1 1 0 011 1v8a1 1 0 01-1 1H4a1 1 0 01-1-1V6z"/>
                             </svg>
                         </div>
-                        <h5 class="font-display text-2xl font-bold mb-3 group-hover:text-white transition-colors duration-300">Zero</h5>
+                        <h5 class="font-lobster text-2xl font-bold mb-3 group-hover:text-white transition-colors duration-300">Zero</h5>
                         <p class="text-white/90 text-base group-hover:text-white transition-colors duration-300">Sin azúcar añadida</p>
                     </div>
                     <div class="text-white/70 text-sm font-medium mt-4 group-hover:text-white/90 transition-colors duration-300">18+ productos</div>
@@ -430,7 +436,7 @@
                                 <path d="M4 3a2 2 0 100 4h12a2 2 0 100-4H4zM4 9a1 1 0 000 2v5a2 2 0 002 2h8a2 2 0 002-2v-5a1 1 0 100-2H4z"/>
                             </svg>
                         </div>
-                        <h5 class="font-display text-2xl font-bold mb-3 group-hover:text-white transition-colors duration-300">Navideños</h5>
+                        <h5 class="font-lobster text-2xl font-bold mb-3 group-hover:text-white transition-colors duration-300">Navideños</h5>
                         <p class="text-white/90 text-base group-hover:text-white transition-colors duration-300">Especialidades festivas</p>
                     </div>
                     <div class="text-white/70 text-sm font-medium mt-4 group-hover:text-white/90 transition-colors duration-300">15+ opciones</div>
@@ -447,7 +453,7 @@
                                 <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4z"/>
                             </svg>
                         </div>
-                        <h5 class="font-display text-2xl font-bold mb-3 group-hover:text-white transition-colors duration-300">Repostería</h5>
+                        <h5 class="font-lobster text-2xl font-bold mb-3 group-hover:text-white transition-colors duration-300">Repostería</h5>
                         <p class="text-white/90 text-base group-hover:text-white transition-colors duration-300">Para tus creaciones</p>
                     </div>
                     <div class="text-white/70 text-sm font-medium mt-4 group-hover:text-white/90 transition-colors duration-300">22+ ingredientes</div>
@@ -468,7 +474,7 @@
                                     <path d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"/>
                                 </svg>
                             </div>
-                            <h5 class="font-display text-2xl font-bold mb-3 group-hover:text-white transition-colors duration-300">Saludables</h5>
+                            <h5 class="font-lobster text-2xl font-bold mb-3 group-hover:text-white transition-colors duration-300">Saludables</h5>
                             <p class="text-white/90 text-base group-hover:text-white transition-colors duration-300">Nutrición y sabor</p>
                         </div>
                         <div class="text-white/70 text-sm font-medium mt-4 group-hover:text-white/90 transition-colors duration-300">14+ opciones</div>
@@ -485,7 +491,7 @@
                                     <circle cx="10" cy="10" r="6"/>
                                 </svg>
                             </div>
-                            <h5 class="font-display text-2xl font-bold mb-3 group-hover:text-white transition-colors duration-300">Snacks</h5>
+                            <h5 class="font-lobster text-2xl font-bold mb-3 group-hover:text-white transition-colors duration-300">Snacks</h5>
                             <p class="text-white/90 text-base group-hover:text-white transition-colors duration-300">Para cualquier momento</p>
                         </div>
                         <div class="text-white/70 text-sm font-medium mt-4 group-hover:text-white/90 transition-colors duration-300">16+ variedades</div>
@@ -502,7 +508,7 @@
                                     <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5z"/>
                                 </svg>
                             </div>
-                            <h5 class="font-display text-2xl font-bold mb-3 group-hover:text-white transition-colors duration-300">Tradicionales</h5>
+                            <h5 class="font-lobster text-2xl font-bold mb-3 group-hover:text-white transition-colors duration-300">Tradicionales</h5>
                             <p class="text-white/90 text-base group-hover:text-white transition-colors duration-300">Recetas de siempre</p>
                         </div>
                         <div class="text-white/70 text-sm font-medium mt-4 group-hover:text-white/90 transition-colors duration-300">10+ clásicos</div>
@@ -519,7 +525,7 @@
                                     <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                                 </svg>
                             </div>
-                            <h5 class="font-display text-2xl font-bold mb-3 group-hover:text-white transition-colors duration-300">Especiales</h5>
+                            <h5 class="font-lobster text-2xl font-bold mb-3 group-hover:text-white transition-colors duration-300">Especiales</h5>
                             <p class="text-white/90 text-base group-hover:text-white transition-colors duration-300">Ediciones limitadas</p>
                         </div>
                         <div class="text-white/70 text-sm font-medium mt-4 group-hover:text-white/90 transition-colors duration-300">8+ únicas</div>
@@ -585,7 +591,7 @@ function toggleAdditionalCategories() {
     <div class="container mx-auto px-4 lg:px-8">
         {{-- Encabezado --}}
         <div class="text-center mb-16 reveal-on-scroll">
-            <h4 class="font-display text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+            <h4 class="font-lobster text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
                 Nuestra <span class="text-red-600">Ubicación</span>
             </h4>
             <p class="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -617,7 +623,7 @@ function toggleAdditionalCategories() {
     <section class="py-20 lg:py-32 bg-red-50">
         <div class="container mx-auto px-4 lg:px-8">
             <div class="text-center mb-16 reveal-on-scroll">
-                <h3 class="font-display text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+                <h3 class="font-lobster text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
                     Lo que dicen nuestros <span class="text-red-600">clientes</span>
                 </h3>
                 <p class="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -770,7 +776,7 @@ function toggleAdditionalCategories() {
     </section>
     <section class="py-20 lg:py-32 relative overflow-hidden">
         {{-- Fondo con cuadrille --}}
-        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/imagenes/cuadrille tipo 1.jpeg.jpg')"></div>
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/cuadrille2.jpeg')"></div>
         
         {{-- Overlay gradiente --}}
         
@@ -779,7 +785,7 @@ function toggleAdditionalCategories() {
         {{-- Encabezado --}}
         <div class="text-center mb-16 reveal-on-scroll">
             <div class="inline-block bg-white/70 backdrop-blur-xs rounded-2xl px-6 py-5">
-                <h4 class="font-display text-4xl lg:text-5xl font-bold text-gray-800">
+                <h4 class="font-lobster text-4xl lg:text-5xl font-bold text-gray-800">
                     Blog & <span class="text-orange-600">Recetario</span>
                 </h4>
                 <p class="mt-3 text-xl text-gray-700 max-w-2xl mx-auto">
@@ -975,7 +981,7 @@ function toggleAdditionalCategories() {
     {{-- Llamado a la acción con cuadrille --}}
     <section class="py-20 lg:py-32 relative overflow-hidden">
         {{-- Fondo con cuadrille --}}
-        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/imagenes/cuadrille tipo 1.jpeg.jpg')"></div>
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/cuadrille2.jpeg')"></div>
         
         {{-- Overlay sólido rojo para mejorar legibilidad dejando ver el cuadrille --}}
         <div class="absolute inset-0 bg-red-700/70"></div>
@@ -989,7 +995,7 @@ function toggleAdditionalCategories() {
         
         <div class="container mx-auto px-4 lg:px-8 text-center relative z-10">
             <div class="max-w-4xl mx-auto reveal-on-scroll">
-                <h6 class="font-display text-4xl lg:text-6xl font-bold text-white mb-8 leading-tight">
+                <h6 class="font-lobster text-4xl lg:text-6xl font-bold text-white mb-8 leading-tight">
                     ¿Listo para endulzar<br>
                     <span class="text-yellow-300">momentos especiales?</span>
                 </h6>
@@ -1206,9 +1212,15 @@ function toggleAdditionalCategories() {
 
 @push('styles')
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 .font-display { 
     font-family: 'Arial Black', Arial, sans-serif; 
     font-weight: normal; /* Arial Black ya es bold */
+}
+
+.font-lobster { 
+    font-family: 'Lobster', cursive; 
+    font-weight: normal;
 }
 
 .font-body { 
@@ -1463,14 +1475,14 @@ function toggleAdditionalCategories() {
     
     /* Estilos para elementos con cuadrille */
     .cuadrille-pattern {
-        background-image: url('/images/imagenes/cuadrille tipo 1.jpeg.jpg');
+        background-image: url('/images/cuadrille2.jpeg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
     }
     
     .cuadrille-texture {
-        background-image: url('/images/imagenes/cuadrille tipo 1.jpeg.jpg');
+        background-image: url('/images/cuadrille2.jpeg');
         background-size: 200px 200px;
         background-repeat: repeat;
         opacity: 0.1;

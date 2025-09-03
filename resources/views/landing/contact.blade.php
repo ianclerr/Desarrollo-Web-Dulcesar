@@ -34,13 +34,16 @@
     <div class="container mx-auto px-4 lg:px-8 relative z-10 pt-10 lg:pt-16">
         {{-- Encabezado --}}
         <div class="text-center mb-16 reveal-on-scroll">
-            <div class="inline-block bg-white/70 backdrop-blur-xs rounded-2xl px-6 py-5">
-                <h4 class="font-display text-4xl lg:text-6xl font-bold text-gray-800 mb-4 leading-tight" style="animation-delay: 0.2s;">
+            <div class="inline-block bg-white/70 backdrop-blur-xs rounded-2xl px-6 py-5 relative overflow-hidden">
+                <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
+                <div class="relative z-10">
+                <h4 class="font-lobster text-4xl lg:text-6xl font-bold text-gray-800 mb-4 leading-tight" style="animation-delay: 0.2s;">
                     Nuestro <span class="text-red-600">Contacto</span>
                 </h4>
                 <p class="text-xl text-gray-700 max-w-2xl mx-auto leading-relaxed font-medium" style="animation-delay: 0.4s;">
                     Contáctanos según tu necesidad específica. Tenemos un equipo especializado para cada área
                 </p>
+                </div>
             </div>
         </div>
 
@@ -51,9 +54,11 @@
                 {{-- Televentas --}}
                 <div class="contact-card relative overflow-hidden rounded-3xl p-8 shadow-2xl hover:shadow-orange-500/10 transition-all duration-500 transform hover:-translate-y-2 animate-fade-in-up" style="animation-delay: 0.6s;">
                     {{-- Fondo cuadrille dentro del cuadro --}}
-                    <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/imagenes/cuadrille tipo 1.jpeg.jpg')"></div>
+                    <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
                     {{-- Fondo blanco sólido --}}
                     <div class="absolute inset-0 bg-white"></div>
+                <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
+                    <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
                     
                     <div class="text-center relative z-10">
                         <div class="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6 icon-bounce">
@@ -77,9 +82,11 @@
                 {{-- Atención al Cliente --}}
                 <div class="contact-card relative overflow-hidden rounded-3xl p-8 shadow-2xl hover:shadow-orange-500/10 transition-all duration-500 transform hover:-translate-y-2 animate-fade-in-up" style="animation-delay: 0.8s;">
                     {{-- Fondo cuadrille dentro del cuadro --}}
-                    <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/imagenes/cuadrille tipo 1.jpeg.jpg')"></div>
+                    <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
                     {{-- Fondo blanco sólido --}}
                     <div class="absolute inset-0 bg-white"></div>
+                <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
+                    <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
                     
                     <div class="text-center relative z-10">
                         <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 icon-bounce">
@@ -103,9 +110,11 @@
                 {{-- RRHH --}}
                 <div class="contact-card relative overflow-hidden rounded-3xl p-8 shadow-2xl hover:shadow-orange-500/10 transition-all duration-500 transform hover:-translate-y-2 animate-fade-in-up" style="animation-delay: 1s;">
                     {{-- Fondo cuadrille dentro del cuadro --}}
-                    <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/imagenes/cuadrille tipo 1.jpeg.jpg')"></div>
+                    <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
                     {{-- Fondo blanco sólido --}}
                     <div class="absolute inset-0 bg-white"></div>
+                <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
+                    <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
                     
                     <div class="text-center relative z-10">
                         <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6 icon-bounce">
@@ -129,9 +138,11 @@
                 {{-- Marketing --}}
                 <div class="contact-card relative overflow-hidden rounded-3xl p-8 shadow-2xl hover:shadow-orange-500/10 transition-all duration-500 transform hover:-translate-y-2 animate-fade-in-up" style="animation-delay: 1.2s;">
                     {{-- Fondo cuadrille dentro del cuadro --}}
-                    <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/imagenes/cuadrille tipo 1.jpeg.jpg')"></div>
+                    <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
                     {{-- Fondo blanco sólido --}}
                     <div class="absolute inset-0 bg-white"></div>
+                <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
+                    <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
                     
                     <div class="text-center relative z-10">
                         <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6 icon-bounce">
@@ -156,9 +167,11 @@
                 {{-- Redes Sociales --}}
                 <div class="contact-card relative overflow-hidden rounded-3xl p-8 shadow-2xl hover:shadow-orange-500/10 transition-all duration-500 transform hover:-translate-y-2 animate-fade-in-up md:col-span-2 lg:col-span-1" style="animation-delay: 1.4s;">
                     {{-- Fondo cuadrille dentro del cuadro --}}
-                    <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/imagenes/cuadrille tipo 1.jpeg.jpg')"></div>
+                    <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
                     {{-- Fondo blanco sólido --}}
                     <div class="absolute inset-0 bg-white"></div>
+                <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
+                    <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
                     
                     <div class="text-center relative z-10">
                         <div class="w-20 h-20 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-6 icon-bounce">
@@ -198,9 +211,10 @@
             {{-- Información General --}}
             <div class="mt-16 relative overflow-hidden rounded-3xl p-8 shadow-2xl hover:shadow-orange-500/10 transition-all duration-500 transform hover:-translate-y-2 animate-fade-in-up" style="animation-delay: 1.6s;">
                 {{-- Fondo cuadrille dentro del cuadro --}}
-                <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/imagenes/cuadrille tipo 1.jpeg.jpg')"></div>
+                <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
                 {{-- Fondo blanco sólido --}}
                 <div class="absolute inset-0 bg-white"></div>
+                <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
                 
                 <div class="text-center relative z-10">
                     <h5 class="text-3xl font-bold text-red-600 mb-6">Información General</h5>

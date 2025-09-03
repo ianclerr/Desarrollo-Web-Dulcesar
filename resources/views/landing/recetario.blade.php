@@ -59,13 +59,16 @@
     
     <div class="container mx-auto px-4 lg:px-8 relative z-10">
         <div class="text-center mb-12 reveal-on-scroll">
-            <div class="inline-block bg-white/70 backdrop-blur-xs rounded-2xl px-6 py-5">
-                <h1 class="font-display text-4xl lg:text-6xl font-bold text-gray-800 mb-4">
+            <div class="inline-block bg-white/70 backdrop-blur-xs rounded-2xl px-6 py-5 relative overflow-hidden">
+                <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
+                <div class="relative z-10">
+                <h1 class="font-lobster text-4xl lg:text-6xl font-bold text-gray-800 mb-4">
                     Blog & <span class="text-red-600">Recetario</span>
                 </h1>
                 <p class="text-xl text-gray-700 max-w-3xl mx-auto font-medium">
                     Descubre recetas deliciosas, tips de cocina, consejos nutricionales y las últimas novedades con nuestros productos Dul-Cesar
                 </p>
+                </div>
             </div>
         </div>
 
@@ -93,7 +96,7 @@
 {{-- Contenido Principal --}}
 <section class="py-16 bg-white relative overflow-hidden">
     {{-- Fondo cuadrille --}}
-    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/imagenes/cuadrille tipo 1.jpeg.jpg')"></div>
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/cuadrille2.jpeg')"></div>
     <div class="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-red-700/70 to-transparent pointer-events-none"></div>
     
     <div class="container mx-auto px-4 lg:px-8 relative z-10">
@@ -104,7 +107,9 @@
                 
                 {{-- Receta Destacada --}}
                 <div class="lg:col-span-2">
-                    <div class="flyer-card bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-2xl hover:shadow-orange-500/10 transition-all duration-500">
+                    <div class="flyer-card bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-2xl hover:shadow-orange-500/10 transition-all duration-500 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
+                        <div class="relative z-10">
                         {{-- Header del Flyer --}}
                         <div class="relative mb-6">
                             <div class="recipe-badge absolute top-4 right-4 px-4 py-2 rounded-full text-white font-bold text-sm z-10">
@@ -208,14 +213,19 @@
                                 <div class="text-orange-600 font-bold text-lg">#DulCesarRecetas</div>
                             </div>
                         </div>
-                    </div>
+                        </div>
+                        </div>
+                            </div>
+                        </div>
                 </div>
 
                 {{-- Sidebar --}}
                 <div class="space-y-8">
                     
                     {{-- Video Tutorial --}}
-                    <div class="bg-white/90 backdrop-blur-sm rounded-3xl p-6 shadow-xl">
+                    <div class="bg-white/90 backdrop-blur-sm rounded-3xl p-6 shadow-xl relative overflow-hidden">
+                        <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
+                        <div class="relative z-10">
                         <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
                             <svg class="w-6 h-6 text-orange-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1.586a1 1 0 01.707.293l2.414 2.414a1 1 0 00.707.293H15M9 10v4a1 1 0 001 1h4M9 10V9a1 1 0 011-1h4a1 1 0 011 1v1M9 10H8a1 1 0 00-1 1v3a1 1 0 001 1h1m0-5h4"></path>
@@ -244,7 +254,10 @@
                         </h3>
                         <p class="text-gray-700 font-medium mb-2">💡 Conservación del Cacao</p>
                         <p class="text-sm text-gray-600">Guarda tu cacao Dul-Cesar en un lugar fresco y seco, lejos de la luz directa. Así mantendrá su sabor y propiedades por más tiempo.</p>
-                    </div>
+                        </div>
+                        </div>
+                            </div>
+                        </div>
 
                     {{-- Novedad --}}
                     <div class="bg-gradient-to-br from-orange-500 to-red-600 rounded-3xl p-6 shadow-xl text-white">
@@ -269,7 +282,9 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     
                     {{-- Receta 1 --}}
-                    <div class="flyer-card bg-white/90 backdrop-blur-sm rounded-3xl p-6 shadow-xl hover:shadow-orange-500/10 transition-all duration-500">
+                    <div class="flyer-card bg-white/90 backdrop-blur-sm rounded-3xl p-6 shadow-xl hover:shadow-orange-500/10 transition-all duration-500 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
+                        <div class="relative z-10">
                         <div class="w-full h-40 bg-cover bg-center rounded-2xl mb-4" style="background-image: url('/images/muffins.jpg')">
                             <div class="w-full h-full bg-black/20 rounded-2xl flex items-center justify-center">
                                 <div class="text-center">
@@ -287,10 +302,14 @@
                             <span>⏱️ 25 min</span>
                             <span>👥 12 galletas</span>
                         </div>
-                    </div>
+                        </div>
+                            </div>
+                        </div>
 
                     {{-- Receta 2 --}}
-                    <div class="flyer-card bg-white/90 backdrop-blur-sm rounded-3xl p-6 shadow-xl hover:shadow-orange-500/10 transition-all duration-500">
+                    <div class="flyer-card bg-white/90 backdrop-blur-sm rounded-3xl p-6 shadow-xl hover:shadow-orange-500/10 transition-all duration-500 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
+                        <div class="relative z-10">
                         <div class="w-full h-40 bg-cover bg-center rounded-2xl mb-4" style="background-image: url('/images/muffins.jpg')">
                             <div class="w-full h-full bg-black/20 rounded-2xl flex items-center justify-center">
                                 <div class="text-center">
@@ -308,10 +327,14 @@
                             <span>⏱️ 30 min</span>
                             <span>👥 12 muffins</span>
                         </div>
-                    </div>
+                        </div>
+                            </div>
+                        </div>
 
                     {{-- Receta 3 --}}
-                    <div class="flyer-card bg-white/90 backdrop-blur-sm rounded-3xl p-6 shadow-xl hover:shadow-orange-500/10 transition-all duration-500">
+                    <div class="flyer-card bg-white/90 backdrop-blur-sm rounded-3xl p-6 shadow-xl hover:shadow-orange-500/10 transition-all duration-500 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
+                        <div class="relative z-10">
                         <div class="w-full h-40 bg-cover bg-center rounded-2xl mb-4" style="background-image: url('/images/brownies.jpg')">
                             <div class="w-full h-full bg-black/20 rounded-2xl flex items-center justify-center">
                                 <div class="text-center">
@@ -329,21 +352,25 @@
                             <span>⏱️ 40 min</span>
                             <span>👥 16 porciones</span>
                         </div>
-                    </div>
+                        </div>
+                            </div>
+                        </div>
                 </div>
             </div>
 
             {{-- Consejos Nutricionales --}}
             <div class="mt-16 bg-gradient-to-r from-green-50 to-blue-50 rounded-3xl p-8 relative overflow-hidden">
                 {{-- Fondo cuadrille --}}
-                <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/imagenes/cuadrille tipo 1.jpeg.jpg')"></div>
+                <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
                 {{-- Overlay gradiente --}}
                 <div class="absolute inset-0 bg-gradient-to-r from-green-50/80 to-blue-50/80"></div>
                 
                 <div class="relative z-10">
                     <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Consejos Nutricionales</h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
+                        <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg relative overflow-hidden">
+                            <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
+                            <div class="relative z-10">
                             <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
                                 <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
@@ -352,7 +379,9 @@
                             <h3 class="font-bold text-gray-800 mb-2">Beneficios del Cacao</h3>
                             <p class="text-sm text-gray-600">Rico en antioxidantes, mejora el estado de ánimo y protege el corazón.</p>
                         </div>
-                        <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
+                        <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg relative overflow-hidden">
+                            <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
+                            <div class="relative z-10">
                             <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
                                 <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
@@ -361,7 +390,9 @@
                             <h3 class="font-bold text-gray-800 mb-2">Energía Natural</h3>
                             <p class="text-sm text-gray-600">Nuestro azúcar proporciona energía rápida para tus actividades diarias.</p>
                         </div>
-                        <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
+                        <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg relative overflow-hidden">
+                            <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/cuadrille2.jpeg')"></div>
+                            <div class="relative z-10">
                             <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4">
                                 <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
@@ -370,7 +401,9 @@
                             <h3 class="font-bold text-gray-800 mb-2">Moderación</h3>
                             <p class="text-sm text-gray-600">Disfruta nuestros productos como parte de una dieta equilibrada.</p>
                         </div>
-                    </div>
+                        </div>
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
