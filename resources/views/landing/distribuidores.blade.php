@@ -4,19 +4,21 @@
 
 @section('content')
 {{-- Sección Para Empresas / Distribuidores --}}
-<section class="py-20 lg:py-32 relative min-h-screen flex items-center overflow-hidden">
+<section class="py-20 lg:py-32 relative min-h-screen flex items-start overflow-hidden">
     {{-- Fondo principal con imagen de picnic --}}
     <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/picnic.jpg')"></div>
     
-    {{-- Overlay gradiente para mejorar legibilidad --}}
-    <div class="absolute inset-0 bg-gradient-to-br from-slate-900/85 via-orange-900/80 to-red-900/85"></div>
+    {{-- Overlay sólido rojo para mejorar legibilidad --}}
+    <div class="absolute inset-0 bg-red-700/70"></div>
+    <div class="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-red-700/70 to-transparent"></div>
+    <div class="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-red-700/70 to-transparent"></div>
     
     {{-- Elementos decorativos flotantes --}}
     <div class="absolute inset-0 overflow-hidden">
-        {{-- Círculos decorativos con animación --}}
-        <div class="absolute top-20 left-10 w-32 h-32 bg-orange-400/20 rounded-full blur-3xl animate-pulse"></div>
-        <div class="absolute bottom-20 right-20 w-48 h-48 bg-red-400/20 rounded-full blur-3xl animate-pulse" style="animation-delay: -2s;"></div>
-        <div class="absolute top-1/2 left-1/3 w-24 h-24 bg-yellow-400/20 rounded-full blur-2xl animate-pulse" style="animation-delay: -4s;"></div>
+        {{-- Burbujas blancas --}}
+        <div class="absolute top-20 left-10 w-32 h-32 bg-white/15 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-20 right-20 w-48 h-48 bg-white/15 rounded-full blur-3xl" style="animation-delay: -2s;"></div>
+        <div class="absolute top-1/2 left-1/3 w-24 h-24 bg-white/15 rounded-full blur-2xl" style="animation-delay: -4s;"></div>
         
         {{-- Elementos de picnic flotantes --}}
         <div class="absolute top-32 right-32 w-16 h-16 bg-white/10 rounded-full blur-lg animate-bounce" style="animation-delay: -1s;"></div>
@@ -30,34 +32,26 @@
         <div class="absolute top-0 right-0 w-1 h-full bg-gradient-to-b from-transparent via-orange-400/30 to-transparent"></div>
     </div>
 
-    <div class="container mx-auto px-4 lg:px-8 relative z-10">
+    <div class="container mx-auto px-4 lg:px-8 relative z-10 pt-10 lg:pt-16">
         {{-- Encabezado Principal --}}
         <div class="text-center mb-20">
-            <div class="inline-flex items-center bg-white px-6 py-3 rounded-full border border-white/50 mb-6 animate-fade-in-up shadow-lg">
-                <svg class="w-5 h-5 text-orange-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
-                </svg>
-                <span class="text-gray-800 font-semibold">Oportunidades Comerciales</span>
+            <div class="inline-block bg-white/70 backdrop-blur-xs rounded-2xl px-6 py-5">
+                <h1 class="font-display text-5xl lg:text-7xl font-bold text-gray-800 mb-4 leading-tight" style="animation-delay: 0.2s;">
+                    <span class="text-gray-800">Únete a Nuestra</span><br>
+                    <span class="text-red-600">Red de Distribución</span>
+                </h1>
+                <p class="text-xl lg:text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed font-medium" style="animation-delay: 0.4s;">
+                    Conviértete en nuestro socio comercial y accede a productos de calidad premium 
+                    con condiciones especiales para mayoristas y distribuidores
+                </p>
             </div>
-            
-            <h1 class="font-display text-5xl lg:text-7xl font-bold text-white mb-8 leading-tight animate-fade-in-up drop-shadow-2xl" style="animation-delay: 0.2s;">
-                <span class="bg-white text-gray-800 px-6 py-2 rounded-2xl shadow-lg">
-                    Únete a Nuestra
-                </span><br>
-                <span class="text-white drop-shadow-2xl">Red de Distribución</span>
-            </h1>
-            
-            <p class="text-xl lg:text-2xl text-white max-w-4xl mx-auto leading-relaxed animate-fade-in-up font-medium drop-shadow-lg" style="animation-delay: 0.4s;">
-                Conviértete en nuestro socio comercial y accede a productos de calidad premium 
-                con condiciones especiales para mayoristas y distribuidores
-            </p>
         </div>
 
         {{-- Grid de Beneficios --}}
         <div class="grid lg:grid-cols-3 gap-8 mb-20">
             {{-- Beneficio 1 --}}
             <div class="bg-white/80 rounded-3xl p-8 border border-white/50 hover:bg-white/90 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl animate-fade-in-up" style="animation-delay: 0.6s;">
-                <div class="w-16 h-16 bg-gradient-to-br from-orange-400 to-red-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+                <div class="w-16 h-16 bg-red-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
                     <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/>
                     </svg>

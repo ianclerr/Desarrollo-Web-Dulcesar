@@ -11,7 +11,7 @@
         box-shadow: 0 25px 50px -12px rgba(234, 88, 12, 0.15);
     }
     .recipe-badge {
-        background: linear-gradient(135deg, #ea580c 0%, #dc2626 100%);
+        background: #dc2626;
     }
     .ingredient-item {
         background: linear-gradient(135deg, #fff7ed 0%, #fed7aa 30%);
@@ -20,7 +20,7 @@
     .step-number {
         width: 28px;
         height: 28px;
-        background: linear-gradient(135deg, #ea580c 0%, #dc2626 100%);
+        background: #dc2626;
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -53,16 +53,20 @@
     {{-- Fondo con imagen recetario banner --}}
     <div class="absolute inset-0 bg-cover bg-center scale-110" style="background-image: url('/images/recetario banner.jpg')"></div>
     {{-- Overlay gradiente para mejorar legibilidad --}}
-    <div class="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-orange-900/70 to-red-900/80"></div>
+    <div class="absolute inset-0 bg-red-700/70"></div>
+    <div class="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-red-700/70 to-transparent"></div>
+    <div class="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-red-700/70 to-transparent"></div>
     
     <div class="container mx-auto px-4 lg:px-8 relative z-10">
         <div class="text-center mb-12 reveal-on-scroll">
-            <h1 class="font-display text-4xl lg:text-6xl font-bold text-white mb-6 drop-shadow-2xl">
-                Blog & <span class="text-orange-300">Recetario</span>
-            </h1>
-            <p class="text-xl text-white max-w-3xl mx-auto drop-shadow-lg font-medium">
-                Descubre recetas deliciosas, tips de cocina, consejos nutricionales y las últimas novedades con nuestros productos Dul-Cesar
-            </p>
+            <div class="inline-block bg-white/70 backdrop-blur-xs rounded-2xl px-6 py-5">
+                <h1 class="font-display text-4xl lg:text-6xl font-bold text-gray-800 mb-4">
+                    Blog & <span class="text-red-600">Recetario</span>
+                </h1>
+                <p class="text-xl text-gray-700 max-w-3xl mx-auto font-medium">
+                    Descubre recetas deliciosas, tips de cocina, consejos nutricionales y las últimas novedades con nuestros productos Dul-Cesar
+                </p>
+            </div>
         </div>
 
         {{-- Filtros de Categoría --}}
@@ -89,9 +93,8 @@
 {{-- Contenido Principal --}}
 <section class="py-16 bg-white relative overflow-hidden">
     {{-- Fondo cuadrille --}}
-    <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('/images/imagenes/cuadrille tipo 1.jpeg.jpg')"></div>
-    {{-- Overlay blanco semi-transparente --}}
-    <div class="absolute inset-0 bg-white/80"></div>
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/imagenes/cuadrille tipo 1.jpeg.jpg')"></div>
+    <div class="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-red-700/70 to-transparent pointer-events-none"></div>
     
     <div class="container mx-auto px-4 lg:px-8 relative z-10">
         <div class="max-w-7xl mx-auto">

@@ -13,20 +13,13 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
         
         <!-- Styles / Scripts -->
-        {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
-        
-        <!-- Enlaces directos a archivos compilados -->
-        <link rel="stylesheet" href="https://748c9889121b.ngrok-free.app/build/assets/app-B-7gIRtA.css">
-        <script src="https://748c9889121b.ngrok-free.app/build/assets/app-DNxiirP_.js" defer></script>
-
-        <link rel="stylesheet" href="{{ asset('build/assets/app-B-7gIRtA.css') }}">
-        <script src="{{ asset('build/assets/app-DNxiirP_.js') }}" defer></script>
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
 
         <!-- Estilos personalizados -->
         <style>
 
 
-                ..font-display { 
+                .font-display { 
   font-family: 'Arial Black', Arial, sans-serif; 
   font-weight: normal; /* Arial Black ya es bold */
 }

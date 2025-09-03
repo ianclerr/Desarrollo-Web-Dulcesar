@@ -7,8 +7,8 @@
         {{-- Fondo con imagen banner_principal.jpg --}}
         <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/banner_principal.jpg')"></div>
         
-        {{-- Overlay gradiente sobre la imagen --}}
-        <div class="absolute inset-0 bg-gradient-to-br from-orange-400/80 via-red-500/80 to-pink-500/80"></div>
+        {{-- Overlay sólido rojo --}}
+        <div class="absolute inset-0 bg-red-700/70"></div>
         <div class="container mx-auto px-4 lg:px-8 relative z-10">
             <div class="grid lg:grid-cols-2 gap-10 items-center">
                 {{-- Slider --}}
@@ -74,33 +74,37 @@
     {{-- Propuesta de valor con cuadrille --}}
     <section class="py-20 lg:py-32 relative overflow-hidden">
         {{-- Fondo con cuadrille --}}
-        <div class="absolute inset-0 bg-cover bg-center opacity-10" style="background-image: url('/images/imagenes/cuadrille tipo 1.jpeg.jpg')"></div>
-        
-        {{-- Overlay gradiente --}}
-        <div class="absolute inset-0 bg-gradient-to-br from-orange-50/80 to-amber-50/80"></div>
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/imagenes/cuadrille tipo 1.jpeg.jpg')"></div>
+        {{-- Fade inferior para transición suave con la sección siguiente --}}
+        <div class="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-red-700/70 to-transparent pointer-events-none"></div>
+        {{-- Faders para transición suave con la sección anterior y siguiente --}}
+        <div class="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-red-700/70 to-transparent pointer-events-none"></div>
+        <div class="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-red-700/70 to-transparent pointer-events-none"></div>
         
         <div class="container mx-auto px-4 lg:px-8 text-center relative z-10">
             <div class="reveal-on-scroll max-w-4xl mx-auto">
-                <h3 class="font-display text-4xl lg:text-6xl font-bold text-gray-800 mb-8 leading-tight">
-                    Más de <span class="text-orange-600">40 años</span><br>
-                    endulzando momentos especiales
-                </h3>
-                <p class="text-xl lg:text-2xl text-gray-600 font-light leading-relaxed">
-                    Cuatro décadas perfeccionando el arte de los dulces artesanales, creando momentos inolvidables y endulzando la vida de familias en todo Paraguay.
-                </p>
+                <div class="inline-block bg-white/70 backdrop-blur-xs rounded-2xl px-6 py-5">
+                    <h3 class="font-display text-4xl lg:text-6xl font-bold text-gray-800 leading-tight">
+                        Más de <span class="text-red-600">40 años</span><br>
+                        endulzando momentos especiales
+                    </h3>
+                    <p class="mt-4 text-xl lg:text-2xl text-gray-700 font-light leading-relaxed">
+                        Cuatro décadas perfeccionando el arte de los dulces artesanales, creando momentos inolvidables y endulzando la vida de familias en todo Paraguay.
+                    </p>
+                </div>
                 
                 {{-- Elementos decorativos con cuadrille --}}
                 <div class="mt-12 flex justify-center space-x-8">
-                    <div class="w-16 h-16 cuadrille-pattern rounded-full border-4 border-orange-200 shadow-lg cuadrille-float"></div>
-                    <div class="w-12 h-12 cuadrille-pattern rounded-full border-4 border-orange-200 shadow-lg cuadrille-float" style="animation-delay: -1s;"></div>
-                    <div class="w-16 h-16 cuadrille-pattern rounded-full border-4 border-orange-200 shadow-lg cuadrille-float" style="animation-delay: -2s;"></div>
+                    <div class="w-16 h-16 cuadrille-pattern rounded-full border-4 border-red-200 shadow-lg cuadrille-float"></div>
+                    <div class="w-12 h-12 cuadrille-pattern rounded-full border-4 border-red-200 shadow-lg cuadrille-float" style="animation-delay: -1s;"></div>
+                    <div class="w-16 h-16 cuadrille-pattern rounded-full border-4 border-red-200 shadow-lg cuadrille-float" style="animation-delay: -2s;"></div>
                 </div>
             </div>
         </div>
     </section>
 
     {{-- Slider de Productos Destacados --}}
-    <section class="py-20 lg:py-32 bg-gradient-to-br from-orange-50 to-amber-50">
+    <section class="py-20 lg:py-32 bg-red-50">
         <div class="container mx-auto px-4 lg:px-8">
             <div class="text-center mb-16 reveal-on-scroll">
                 <h4 class="font-display text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
@@ -118,7 +122,7 @@
                         {{-- Producto 1 --}}
                         <div class="product-slide w-full md:w-1/2 lg:w-1/3 flex-shrink-0 p-6">
                             <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 h-full">
-                                <div class="w-full h-48 bg-gradient-to-br from-orange-200 to-red-200 rounded-xl mb-6 flex items-center justify-center">
+                                <div class="w-full h-48 bg-red-100 rounded-xl mb-6 flex items-center justify-center">
                                     <div class="text-center">
                                         <div class="w-20 h-20 cuadrille-pattern rounded-full mx-auto mb-4 border-4 border-orange-200"></div>
                                         <p class="text-gray-600 font-semibold">Mermelada de Guayaba</p>
@@ -127,8 +131,8 @@
                                 <h5 class="font-display text-2xl font-bold text-gray-800 mb-4">Mermelada de Guayaba</h5>
                                 <p class="text-gray-600 mb-6">Nuestro producto estrella, elaborado con guayabas frescas y receta tradicional.</p>
                                 <div class="flex justify-between items-center">
-                                    <span class="text-orange-600 font-bold text-lg">Premium</span>
-                                    <button class="px-4 py-2 bg-orange-500 text-white rounded-full hover:bg-orange-600 transition-colors">
+                                    <span class="text-red-600 font-bold text-lg">Premium</span>
+                                    <button class="px-4 py-2 bg-red-600 text-white rounded-full hover:bg-red-700 transition-colors">
                                         Ver más
                                     </button>
                                 </div>
@@ -138,7 +142,7 @@
                         {{-- Producto 2 --}}
                         <div class="product-slide w-full md:w-1/2 lg:w-1/3 flex-shrink-0 p-6">
                             <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 h-full">
-                                <div class="w-full h-48 bg-gradient-to-br from-amber-200 to-yellow-200 rounded-xl mb-6 flex items-center justify-center">
+                                <div class="w-full h-48 bg-red-100 rounded-xl mb-6 flex items-center justify-center">
                                     <div class="text-center">
                                         <div class="w-20 h-20 cuadrille-pattern rounded-full mx-auto mb-4 border-4 border-amber-200"></div>
                                         <p class="text-gray-600 font-semibold">Dulce de Mamón</p>
@@ -147,8 +151,8 @@
                                 <h5 class="font-display text-2xl font-bold text-gray-800 mb-4">Dulce de Mamón</h5>
                                 <p class="text-gray-600 mb-6">Elaborado con mamón maduro y azúcar, siguiendo recetas ancestrales.</p>
                                 <div class="flex justify-between items-center">
-                                    <span class="text-amber-600 font-bold text-lg">Tradicional</span>
-                                    <button class="px-4 py-2 bg-amber-500 text-white rounded-full hover:bg-amber-600 transition-colors">
+                                    <span class="text-red-600 font-bold text-lg">Tradicional</span>
+                                    <button class="px-4 py-2 bg-red-600 text-white rounded-full hover:bg-red-700 transition-colors">
                                         Ver más
                                     </button>
                                 </div>
@@ -158,7 +162,7 @@
                         {{-- Producto 3 --}}
                         <div class="product-slide w-full md:w-1/2 lg:w-1/3 flex-shrink-0 p-6">
                             <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 h-full">
-                                <div class="w-full h-48 bg-gradient-to-br from-red-200 to-pink-200 rounded-xl mb-6 flex items-center justify-center">
+                                <div class="w-full h-48 bg-red-100 rounded-xl mb-6 flex items-center justify-center">
                                     <div class="text-center">
                                         <div class="w-20 h-20 cuadrille-pattern rounded-full mx-auto mb-4 border-4 border-red-200"></div>
                                         <p class="text-gray-600 font-semibold">Aderezo Especial</p>
@@ -168,7 +172,7 @@
                                 <p class="text-gray-600 mb-6">Perfecto para acompañar tus comidas con un toque especial de sabor.</p>
                                 <div class="flex justify-between items-center">
                                     <span class="text-red-600 font-bold text-lg">Gourmet</span>
-                                    <button class="px-4 py-2 bg-red-500 text-white rounded-full hover:bg-red-600 transition-colors">
+                                    <button class="px-4 py-2 bg-red-600 text-white rounded-full hover:bg-red-700 transition-colors">
                                         Ver más
                                     </button>
                                 </div>
@@ -178,7 +182,7 @@
                         {{-- Producto 4 --}}
                         <div class="product-slide w-full md:w-1/2 lg:w-1/3 flex-shrink-0 p-6">
                             <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 h-full">
-                                <div class="w-full h-48 bg-gradient-to-br from-green-200 to-emerald-200 rounded-xl mb-6 flex items-center justify-center">
+                                <div class="w-full h-48 bg-red-100 rounded-xl mb-6 flex items-center justify-center">
                                     <div class="text-center">
                                         <div class="w-20 h-20 cuadrille-pattern rounded-full mx-auto mb-4 border-4 border-green-200"></div>
                                         <p class="text-gray-600 font-semibold">Mermelada Light</p>
@@ -187,8 +191,8 @@
                                 <h5 class="font-display text-2xl font-bold text-gray-800 mb-4">Mermelada Light</h5>
                                 <p class="text-gray-600 mb-6">Sabor auténtico con menos calorías, perfecta para cuidar tu salud.</p>
                                 <div class="flex justify-between items-center">
-                                    <span class="text-green-600 font-bold text-lg">Light</span>
-                                    <button class="px-4 py-2 bg-green-500 text-white rounded-full hover:bg-green-600 transition-colors">
+                                    <span class="text-red-600 font-bold text-lg">Light</span>
+                                    <button class="px-4 py-2 bg-red-600 text-white rounded-full hover:bg-red-700 transition-colors">
                                         Ver más
                                     </button>
                                 </div>
@@ -214,17 +218,19 @@
 
     {{-- Sección de tradición con cuadrille --}}
     <section class="py-20 lg:py-32 relative overflow-hidden">
-        {{-- Fondo con cuadrille --}}
-        <div class="absolute inset-0 bg-cover bg-center opacity-5" style="background-image: url('/images/imagenes/cuadrille tipo 1.jpeg.jpg')"></div>
+        {{-- Fondo con cuadrille (sin opacidad) --}}
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/imagenes/cuadrille tipo 1.jpeg.jpg')"></div>
         
         <div class="container mx-auto px-4 lg:px-8 relative z-10">
             <div class="text-center mb-16 reveal-on-scroll">
-                <h4 class="font-display text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
-                    <span class="text-orange-600">Tradición</span> y <span class="text-red-600">Calidad</span>
-                </h4>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-                    Nuestros productos reflejan la autenticidad del sabor paraguayo, elaborados con técnicas tradicionales y los mejores ingredientes
-                </p>
+                <div class="inline-block bg-white/80 backdrop-blur-xs rounded-2xl px-6 py-5">
+                    <h4 class="font-display text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
+                        <span class="text-red-600">Tradición</span> y <span class="text-red-600">Calidad</span>
+                    </h4>
+                    <p class="text-xl text-gray-700 max-w-2xl mx-auto">
+                        Nuestros productos reflejan la autenticidad del sabor paraguayo, elaborados con técnicas tradicionales y los mejores ingredientes
+                    </p>
+                </div>
             </div>
             
             {{-- Grid de características --}}
@@ -254,11 +260,11 @@
     </section>
 
     {{-- Categorías de productos - Grid 4x2 --}}
-<section class="py-20 lg:py-32 bg-gradient-to-br from-orange-50 to-amber-50">
+<section class="py-20 lg:py-32 bg-red-50">
     <div class="container mx-auto px-4 lg:px-8">
         <div class="text-center mb-16 reveal-on-scroll">
             <h4 class="font-display text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
-                Nuestras <span class="text-orange-600">Categorías</span>
+                Nuestras <span class="text-red-600">Categorías</span>
             </h4>
             <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
                 Cada categoría representa años de perfección, tradición y dulzura auténtica
@@ -276,12 +282,12 @@
                         type="text" 
                         id="product-search" 
                         placeholder="Buscar productos por nombre..." 
-                        class="w-full pl-12 pr-24 py-4 text-lg border-2 border-orange-200 rounded-full focus:border-orange-500 focus:ring-4 focus:ring-orange-100 focus:outline-none transition-all duration-300 bg-white/80 backdrop-blur-sm shadow-lg"
+                        class="w-full pl-12 pr-24 py-4 text-lg border-2 border-red-200 rounded-full focus:border-red-500 focus:ring-4 focus:ring-red-100 focus:outline-none transition-all duration-300 bg-white/80 backdrop-blur-sm shadow-lg"
                     >
                     <button 
                         type="button" 
                         onclick="searchProducts()"
-                        class="absolute inset-y-0 right-0 px-6 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-full mr-1 my-1 hover:from-orange-600 hover:to-red-600 focus:ring-4 focus:ring-orange-200 focus:outline-none transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 font-semibold"
+                        class="absolute inset-y-0 right-0 px-6 bg-red-600 text-white rounded-full mr-1 my-1 hover:bg-red-700 focus:ring-4 focus:ring-red-200 focus:outline-none transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 font-semibold"
                     >
                         Buscar
                     </button>
@@ -290,16 +296,16 @@
                 {{-- Sugerencias de búsqueda --}}
                 <div class="flex flex-wrap justify-center gap-2 mt-4">
                     <span class="text-sm text-gray-500 mr-2">Populares:</span>
-                    <button onclick="quickSearch('mermeladas')" class="text-sm bg-orange-100 text-orange-700 px-3 py-1 rounded-full hover:bg-orange-200 transition-colors duration-200">
+                    <button onclick="quickSearch('mermeladas')" class="text-sm bg-red-100 text-red-700 px-3 py-1 rounded-full hover:bg-red-200 transition-colors duration-200">
                         Mermeladas
                     </button>
-                    <button onclick="quickSearch('aderezos')" class="text-sm bg-orange-100 text-orange-700 px-3 py-1 rounded-full hover:bg-orange-200 transition-colors duration-200">
+                    <button onclick="quickSearch('aderezos')" class="text-sm bg-red-100 text-red-700 px-3 py-1 rounded-full hover:bg-red-200 transition-colors duration-200">
                         Aderezos
                     </button>
-                    <button onclick="quickSearch('jugos')" class="text-sm bg-orange-100 text-orange-700 px-3 py-1 rounded-full hover:bg-orange-200 transition-colors duration-200">
+                    <button onclick="quickSearch('jugos')" class="text-sm bg-red-100 text-red-700 px-3 py-1 rounded-full hover:bg-red-200 transition-colors duration-200">
                         Jugos
                     </button>
-                    <button onclick="quickSearch('zero')" class="text-sm bg-orange-100 text-orange-700 px-3 py-1 rounded-full hover:bg-orange-200 transition-colors duration-200">
+                    <button onclick="quickSearch('zero')" class="text-sm bg-red-100 text-red-700 px-3 py-1 rounded-full hover:bg-red-200 transition-colors duration-200">
                         Zero
                     </button>
                 </div>
@@ -311,10 +317,10 @@
         {{-- Primera fila - 4 categorías --}}
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto mb-8">
             {{-- Aderezos --}}
-            <div class="group bg-gradient-to-br from-red-400 to-red-600 rounded-2xl p-8 text-white shadow-xl cursor-pointer transition-all duration-500 hover:shadow-2xl hover:shadow-red-500/30 hover:-translate-y-2 hover:scale-105" onclick="openAderezosModal()">
+            <div class="group bg-red-600 rounded-2xl p-8 text-white shadow-xl cursor-pointer transition-all duration-500 hover:shadow-2xl hover:shadow-red-500/30 hover:-translate-y-2 hover:scale-105" onclick="openAderezosModal()">
                 <div class="h-full flex flex-col justify-between">
                     <div>
-                        <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6 group-hover:bg-white/30 group-hover:scale-110 transition-all duration-300">
+                        <div class="w-16 h-16 bg-white/70 rounded-full flex items-center justify-center mb-6 group-hover:bg-white group-hover:scale-110 transition-all duration-300">
                             <svg class="w-8 h-8 group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                             </svg>
@@ -324,14 +330,14 @@
                     </div>
                     <div class="text-white/70 text-sm font-medium mt-4 group-hover:text-white/90 transition-colors duration-300">25+ variedades</div>
                 </div>
-                <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div class="absolute inset-0 rounded-2xl"></div>
             </div>
             
             {{-- Granos --}}
-            <div class="group bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl p-8 text-white shadow-xl cursor-pointer transition-all duration-500 hover:shadow-2xl hover:shadow-amber-500/30 hover:-translate-y-2 hover:scale-105" onclick="openGranosModal()">
+            <div class="group bg-red-600 rounded-2xl p-8 text-white shadow-xl cursor-pointer transition-all duration-500 hover:shadow-2xl hover:shadow-red-500/30 hover:-translate-y-2 hover:scale-105" onclick="openGranosModal()">
                 <div class="h-full flex flex-col justify-between">
                     <div>
-                        <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6 group-hover:bg-white/30 group-hover:scale-110 transition-all duration-300">
+                        <div class="w-16 h-16 bg-white/70 rounded-full flex items-center justify-center mb-6 group-hover:bg-white group-hover:scale-110 transition-all duration-300">
                             <svg class="w-8 h-8 group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
                                 <circle cx="10" cy="10" r="8"/>
                             </svg>
@@ -341,14 +347,14 @@
                     </div>
                     <div class="text-white/70 text-sm font-medium mt-4 group-hover:text-white/90 transition-colors duration-300">20+ opciones</div>
                 </div>
-                <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div class="absolute inset-0 rounded-2xl"></div>
             </div>
             
             {{-- Jugos --}}
-            <div class="group bg-gradient-to-br from-orange-500 to-red-500 rounded-2xl p-8 text-white shadow-xl cursor-pointer transition-all duration-500 hover:shadow-2xl hover:shadow-orange-500/30 hover:-translate-y-2 hover:scale-105" onclick="openJugosModal()">
+            <div class="group bg-red-600 rounded-2xl p-8 text-white shadow-xl cursor-pointer transition-all duration-500 hover:shadow-2xl hover:shadow-red-500/30 hover:-translate-y-2 hover:scale-105" onclick="openJugosModal()">
                 <div class="h-full flex flex-col justify-between">
                     <div>
-                        <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6 group-hover:bg-white/30 group-hover:scale-110 transition-all duration-300">
+                        <div class="w-16 h-16 bg-white/70 rounded-full flex items-center justify-center mb-6 group-hover:bg-white group-hover:scale-110 transition-all duration-300">
                             <svg class="w-8 h-8 group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V5a2 2 0 00-2-2H5z"/>
                             </svg>
@@ -358,14 +364,14 @@
                     </div>
                     <div class="text-white/70 text-sm font-medium mt-4 group-hover:text-white/90 transition-colors duration-300">15+ sabores</div>
                 </div>
-                <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div class="absolute inset-0 rounded-2xl"></div>
             </div>
             
             {{-- Mermeladas --}}
-            <div class="group bg-gradient-to-br from-yellow-400 to-amber-500 rounded-2xl p-8 text-white shadow-xl cursor-pointer transition-all duration-500 hover:shadow-2xl hover:shadow-yellow-500/30 hover:-translate-y-2 hover:scale-105" onclick="openMermeladasModal()">
+            <div class="group bg-red-600 rounded-2xl p-8 text-white shadow-xl cursor-pointer transition-all duration-500 hover:shadow-2xl hover:shadow-red-500/30 hover:-translate-y-2 hover:scale-105" onclick="openMermeladasModal()">
                 <div class="h-full flex flex-col justify-between">
                     <div>
-                        <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6 group-hover:bg-white/30 group-hover:scale-110 transition-all duration-300">
+                        <div class="w-16 h-16 bg-white/70 rounded-full flex items-center justify-center mb-6 group-hover:bg-white group-hover:scale-110 transition-all duration-300">
                             <svg class="w-8 h-8 group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                             </svg>
@@ -375,17 +381,17 @@
                     </div>
                     <div class="text-white/70 text-sm font-medium mt-4 group-hover:text-white/90 transition-colors duration-300">30+ variedades</div>
                 </div>
-                <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div class="absolute inset-0 rounded-2xl"></div>
             </div>
         </div>
         
         {{-- Segunda fila - 4 categorías --}}
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto mb-12">
             {{-- Mermeladas Light --}}
-            <div class="group bg-gradient-to-br from-green-400 to-emerald-500 rounded-2xl p-8 text-white shadow-xl cursor-pointer transition-all duration-500 hover:shadow-2xl hover:shadow-green-500/30 hover:-translate-y-2 hover:scale-105" onclick="openCategoriesModal()">
+            <div class="group bg-red-600 rounded-2xl p-8 text-white shadow-xl cursor-pointer transition-all duration-500 hover:shadow-2xl hover:shadow-red-500/30 hover:-translate-y-2 hover:scale-105" onclick="openCategoriesModal()">
                 <div class="h-full flex flex-col justify-between">
                     <div>
-                        <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6 group-hover:bg-white/30 group-hover:scale-110 transition-all duration-300">
+                        <div class="w-16 h-16 bg-white/70 rounded-full flex items-center justify-center mb-6 group-hover:bg-white group-hover:scale-110 transition-all duration-300">
                             <svg class="w-8 h-8 group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M10 2L3 7v11a1 1 0 001 1h12a1 1 0 001-1V7l-7-5z"/>
                             </svg>
@@ -395,14 +401,14 @@
                     </div>
                     <div class="text-white/70 text-sm font-medium mt-4 group-hover:text-white/90 transition-colors duration-300">12+ opciones</div>
                 </div>
-                <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div class="absolute inset-0 rounded-2xl"></div>
             </div>
             
             {{-- Zero --}}
-            <div class="group bg-gradient-to-br from-purple-400 to-indigo-500 rounded-2xl p-8 text-white shadow-xl cursor-pointer transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/30 hover:-translate-y-2 hover:scale-105" onclick="openCategoriesModal()">
+            <div class="group bg-red-600 rounded-2xl p-8 text-white shadow-xl cursor-pointer transition-all duration-500 hover:shadow-2xl hover:shadow-red-500/30 hover:-translate-y-2 hover:scale-105" onclick="openCategoriesModal()">
                 <div class="h-full flex flex-col justify-between">
                     <div>
-                        <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6 group-hover:bg-white/30 group-hover:scale-110 transition-all duration-300">
+                        <div class="w-16 h-16 bg-white/70 rounded-full flex items-center justify-center mb-6 group-hover:bg-white group-hover:scale-110 transition-all duration-300">
                             <svg class="w-8 h-8 group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M6 2a1 1 0 000 2h8a1 1 0 100-2H6zM3 6a1 1 0 011-1h12a1 1 0 011 1v8a1 1 0 01-1 1H4a1 1 0 01-1-1V6z"/>
                             </svg>
@@ -412,14 +418,14 @@
                     </div>
                     <div class="text-white/70 text-sm font-medium mt-4 group-hover:text-white/90 transition-colors duration-300">18+ productos</div>
                 </div>
-                <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div class="absolute inset-0 rounded-2xl"></div>
             </div>
             
             {{-- Navideños --}}
-            <div class="group bg-gradient-to-br from-teal-400 to-cyan-500 rounded-2xl p-8 text-white shadow-xl cursor-pointer transition-all duration-500 hover:shadow-2xl hover:shadow-teal-500/30 hover:-translate-y-2 hover:scale-105" onclick="openCategoriesModal()">
+            <div class="group bg-red-600 rounded-2xl p-8 text-white shadow-xl cursor-pointer transition-all duration-500 hover:shadow-2xl hover:shadow-red-500/30 hover:-translate-y-2 hover:scale-105" onclick="openCategoriesModal()">
                 <div class="h-full flex flex-col justify-between">
                     <div>
-                        <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6 group-hover:bg-white/30 group-hover:scale-110 transition-all duration-300">
+                        <div class="w-16 h-16 bg-white/70 rounded-full flex items-center justify-center mb-6 group-hover:bg-white group-hover:scale-110 transition-all duration-300">
                             <svg class="w-8 h-8 group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M4 3a2 2 0 100 4h12a2 2 0 100-4H4zM4 9a1 1 0 000 2v5a2 2 0 002 2h8a2 2 0 002-2v-5a1 1 0 100-2H4z"/>
                             </svg>
@@ -429,14 +435,14 @@
                     </div>
                     <div class="text-white/70 text-sm font-medium mt-4 group-hover:text-white/90 transition-colors duration-300">15+ opciones</div>
                 </div>
-                <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div class="absolute inset-0 rounded-2xl"></div>
             </div>
             
             {{-- Repostería --}}
-            <div class="group bg-gradient-to-br from-pink-400 to-rose-500 rounded-2xl p-8 text-white shadow-xl cursor-pointer transition-all duration-500 hover:shadow-2xl hover:shadow-pink-500/30 hover:-translate-y-2 hover:scale-105" onclick="openCategoriesModal()">
+            <div class="group bg-red-600 rounded-2xl p-8 text-white shadow-xl cursor-pointer transition-all duration-500 hover:shadow-2xl hover:shadow-red-500/30 hover:-translate-y-2 hover:scale-105" onclick="openCategoriesModal()">
                 <div class="h-full flex flex-col justify-between">
                     <div>
-                        <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6 group-hover:bg-white/30 group-hover:scale-110 transition-all duration-300">
+                        <div class="w-16 h-16 bg-white/70 rounded-full flex items-center justify-center mb-6 group-hover:bg-white group-hover:scale-110 transition-all duration-300">
                             <svg class="w-8 h-8 group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4z"/>
                             </svg>
@@ -446,7 +452,7 @@
                     </div>
                     <div class="text-white/70 text-sm font-medium mt-4 group-hover:text-white/90 transition-colors duration-300">22+ ingredientes</div>
                 </div>
-                <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div class="absolute inset-0 rounded-2xl"></div>
             </div>
         </div>
         
@@ -454,10 +460,10 @@
         <div id="additional-categories" class="hidden">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto mb-12">
                 {{-- Saludables --}}
-                <div class="group bg-gradient-to-br from-yellow-500 to-orange-600 rounded-2xl p-8 text-white shadow-xl cursor-pointer transition-all duration-500 hover:shadow-2xl hover:shadow-yellow-500/30 hover:-translate-y-2 hover:scale-105" onclick="openCategoriesModal()">
+                <div class="group bg-red-600 rounded-2xl p-8 text-white shadow-xl cursor-pointer transition-all duration-500 hover:shadow-2xl hover:shadow-red-500/30 hover:-translate-y-2 hover:scale-105" onclick="openCategoriesModal()">
                     <div class="h-full flex flex-col justify-between">
                         <div>
-                            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6 group-hover:bg-white/30 group-hover:scale-110 transition-all duration-300">
+                            <div class="w-16 h-16 bg-white/70 rounded-full flex items-center justify-center mb-6 group-hover:bg-white group-hover:scale-110 transition-all duration-300">
                                 <svg class="w-8 h-8 group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
                                     <path d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"/>
                                 </svg>
@@ -467,14 +473,14 @@
                         </div>
                         <div class="text-white/70 text-sm font-medium mt-4 group-hover:text-white/90 transition-colors duration-300">14+ opciones</div>
                     </div>
-                    <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    
                 </div>
                 
                 {{-- Snacks --}}
-                <div class="group bg-gradient-to-br from-orange-600 to-red-600 rounded-2xl p-8 text-white shadow-xl cursor-pointer transition-all duration-500 hover:shadow-2xl hover:shadow-orange-600/30 hover:-translate-y-2 hover:scale-105" onclick="openCategoriesModal()">
+                <div class="group bg-red-600 rounded-2xl p-8 text-white shadow-xl cursor-pointer transition-all duration-500 hover:shadow-2xl hover:shadow-red-500/30 hover:-translate-y-2 hover:scale-105" onclick="openCategoriesModal()">
                     <div class="h-full flex flex-col justify-between">
                         <div>
-                            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6 group-hover:bg-white/30 group-hover:scale-110 transition-all duration-300">
+                            <div class="w-16 h-16 bg-white/70 rounded-full flex items-center justify-center mb-6 group-hover:bg-white group-hover:scale-110 transition-all duration-300">
                                 <svg class="w-8 h-8 group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
                                     <circle cx="10" cy="10" r="6"/>
                                 </svg>
@@ -484,14 +490,14 @@
                         </div>
                         <div class="text-white/70 text-sm font-medium mt-4 group-hover:text-white/90 transition-colors duration-300">16+ variedades</div>
                     </div>
-                    <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    
                 </div>
                 
                 {{-- Tradicionales --}}
-                <div class="group bg-gradient-to-br from-amber-600 to-yellow-600 rounded-2xl p-8 text-white shadow-xl cursor-pointer transition-all duration-500 hover:shadow-2xl hover:shadow-amber-600/30 hover:-translate-y-2 hover:scale-105" onclick="openCategoriesModal()">
+                <div class="group bg-red-600 rounded-2xl p-8 text-white shadow-xl cursor-pointer transition-all duration-500 hover:shadow-2xl hover:shadow-red-500/30 hover:-translate-y-2 hover:scale-105" onclick="openCategoriesModal()">
                     <div class="h-full flex flex-col justify-between">
                         <div>
-                            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6 group-hover:bg-white/30 group-hover:scale-110 transition-all duration-300">
+                            <div class="w-16 h-16 bg-white/70 rounded-full flex items-center justify-center mb-6 group-hover:bg-white group-hover:scale-110 transition-all duration-300">
                                 <svg class="w-8 h-8 group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
                                     <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5z"/>
                                 </svg>
@@ -501,14 +507,14 @@
                         </div>
                         <div class="text-white/70 text-sm font-medium mt-4 group-hover:text-white/90 transition-colors duration-300">10+ clásicos</div>
                     </div>
-                    <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    
                 </div>
                 
                 {{-- Especiales --}}
-                <div class="group bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl p-8 text-white shadow-xl cursor-pointer transition-all duration-500 hover:shadow-2xl hover:shadow-indigo-500/30 hover:-translate-y-2 hover:scale-105" onclick="openCategoriesModal()">
+                <div class="group bg-red-600 rounded-2xl p-8 text-white shadow-xl cursor-pointer transition-all duration-500 hover:shadow-2xl hover:shadow-red-500/30 hover:-translate-y-2 hover:scale-105" onclick="openCategoriesModal()">
                     <div class="h-full flex flex-col justify-between">
                         <div>
-                            <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6 group-hover:bg-white/30 group-hover:scale-110 transition-all duration-300">
+                            <div class="w-16 h-16 bg-white/70 rounded-full flex items-center justify-center mb-6 group-hover:bg-white group-hover:scale-110 transition-all duration-300">
                                 <svg class="w-8 h-8 group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
                                     <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                                 </svg>
@@ -518,7 +524,7 @@
                         </div>
                         <div class="text-white/70 text-sm font-medium mt-4 group-hover:text-white/90 transition-colors duration-300">8+ únicas</div>
                     </div>
-                    <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    
                 </div>
             </div>
         </div>
@@ -528,7 +534,7 @@
             <button 
                 id="toggle-categories-btn"
                 onclick="toggleAdditionalCategories()"
-                class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold text-lg rounded-full hover:from-orange-600 hover:to-red-600 focus:ring-4 focus:ring-orange-200 focus:outline-none transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                class="inline-flex items-center px-8 py-4 bg-red-600 text-white font-bold text-lg rounded-full hover:bg-red-700 focus:ring-4 focus:ring-red-200 focus:outline-none transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
             >
                 <span id="btn-text">Ver más productos</span>
                 <svg id="btn-icon" class="ml-2 w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -575,12 +581,12 @@ function toggleAdditionalCategories() {
 }
 </script>
 {{-- Sección de Ubicación --}}
-<section class="py-20 lg:py-32 bg-gradient-to-br from-gray-50 to-orange-50">
+<section class="py-20 lg:py-32 bg-red-50">
     <div class="container mx-auto px-4 lg:px-8">
         {{-- Encabezado --}}
         <div class="text-center mb-16 reveal-on-scroll">
             <h4 class="font-display text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
-                Nuestra <span class="text-orange-600">Ubicación</span>
+                Nuestra <span class="text-red-600">Ubicación</span>
             </h4>
             <p class="text-xl text-gray-600 max-w-2xl mx-auto">
                 Visítanos en nuestras instalaciones y descubre de primera mano la calidad de nuestros productos
@@ -608,11 +614,11 @@ function toggleAdditionalCategories() {
 </section>
 
     {{-- Sección de Valoraciones --}}
-    <section class="py-20 lg:py-32 bg-gradient-to-br from-orange-50 to-amber-50">
+    <section class="py-20 lg:py-32 bg-red-50">
         <div class="container mx-auto px-4 lg:px-8">
             <div class="text-center mb-16 reveal-on-scroll">
                 <h3 class="font-display text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
-                    Lo que dicen nuestros <span class="text-orange-600">clientes</span>
+                    Lo que dicen nuestros <span class="text-red-600">clientes</span>
                 </h3>
                 <p class="text-xl text-gray-600 max-w-2xl mx-auto">
                     Más de 30 años endulzando momentos especiales y creando experiencias inolvidables
@@ -764,20 +770,22 @@ function toggleAdditionalCategories() {
     </section>
     <section class="py-20 lg:py-32 relative overflow-hidden">
         {{-- Fondo con cuadrille --}}
-        <div class="absolute inset-0 bg-cover bg-center opacity-10" style="background-image: url('/images/imagenes/cuadrille tipo 1.jpeg.jpg')"></div>
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/imagenes/cuadrille tipo 1.jpeg.jpg')"></div>
         
         {{-- Overlay gradiente --}}
-        <div class="absolute inset-0 bg-gradient-to-br from-gray-50/80 to-orange-50/80"></div>
+        
         
         <div class="container mx-auto px-4 lg:px-8 relative z-10">
         {{-- Encabezado --}}
         <div class="text-center mb-16 reveal-on-scroll">
-            <h4 class="font-display text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
-                Blog & <span class="text-orange-600">Recetario</span>
-            </h4>
-            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-                Descubre recetas deliciosas, tips de cocina y consejos nutricionales con nuestros productos
-            </p>
+            <div class="inline-block bg-white/70 backdrop-blur-xs rounded-2xl px-6 py-5">
+                <h4 class="font-display text-4xl lg:text-5xl font-bold text-gray-800">
+                    Blog & <span class="text-orange-600">Recetario</span>
+                </h4>
+                <p class="mt-3 text-xl text-gray-700 max-w-2xl mx-auto">
+                    Descubre recetas deliciosas, tips de cocina y consejos nutricionales con nuestros productos
+                </p>
+            </div>
         </div>
 
         {{-- Ejemplos de Flyers --}}
@@ -956,7 +964,7 @@ function toggleAdditionalCategories() {
             </div>
             {{-- Botón "Ver todas las Recetas" --}}
 <div class="mt-12 text-center">
-    <a href="{{ route('recetario') }}" class="inline-block px-8 py-4 text-white bg-gradient-to-r from-orange-500 to-orange-600 rounded-full font-semibold text-lg shadow-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 transform hover:scale-105">
+    <a href="{{ route('recetario') }}" class="inline-block px-8 py-4 text-white bg-red-600 rounded-full font-semibold text-lg shadow-lg hover:bg-red-700 transition-all duration-300 transform hover:scale-105">
         Ver todas las Recetas
     </a>
 </div>
@@ -969,8 +977,11 @@ function toggleAdditionalCategories() {
         {{-- Fondo con cuadrille --}}
         <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/images/imagenes/cuadrille tipo 1.jpeg.jpg')"></div>
         
-        {{-- Overlay gradiente --}}
-        <div class="absolute inset-0 bg-gradient-to-r from-orange-500/90 via-red-500/90 to-pink-500/90"></div>
+        {{-- Overlay sólido rojo para mejorar legibilidad dejando ver el cuadrille --}}
+        <div class="absolute inset-0 bg-red-700/70"></div>
+        {{-- Faders para transiciones suaves entre secciones (evitar línea dura) --}}
+        <div class="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-transparent to-red-700/70"></div>
+        <div class="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-transparent to-red-700/70"></div>
         
         {{-- Elementos decorativos --}}
         <div class="absolute top-10 left-10 w-32 h-32 bg-white/10 rounded-full blur-xl floating"></div>
@@ -987,10 +998,10 @@ function toggleAdditionalCategories() {
                 </p>
                 
                 <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                    <button class="px-10 py-5 bg-white text-orange-600 font-bold text-lg rounded-full shadow-2xl hover:scale-105 hover:shadow-white/25 transition-all duration-300 hover:bg-gray-50">
+                    <button class="px-10 py-5 bg-white text-red-600 font-bold text-lg rounded-full shadow-2xl hover:scale-105 hover:shadow-white/25 transition-all duration-300 hover:bg-gray-50">
                         Conocé nuestros productos
                     </button>
-                    <button class="px-10 py-5 bg-transparent border-2 border-white text-white font-bold text-lg rounded-full hover:bg-white hover:text-orange-600 hover:scale-105 transition-all duration-300">
+                    <button class="px-10 py-5 bg-transparent border-2 border-white text-white font-bold text-lg rounded-full hover:bg-white hover:text-red-600 hover:scale-105 transition-all duration-300">
                         Descargá nuestro catálogo
                     </button>
                 </div>
@@ -1001,7 +1012,7 @@ function toggleAdditionalCategories() {
 
 
     {{-- Botón para abrir modal general --}}
-    <button onclick="openTodosModal()" class="fixed bottom-8 right-8 bg-gradient-to-r from-orange-500 to-amber-500 text-white p-4 rounded-full shadow-2xl hover:shadow-orange-500/25 transition-all duration-300 hover:scale-110 z-40">
+    <button onclick="openTodosModal()" class="fixed bottom-8 right-8 bg-red-600 text-white p-4 rounded-full shadow-2xl hover:shadow-red-500/25 transition-all duration-300 hover:scale-110 z-40">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
                             </svg>
