@@ -13,7 +13,7 @@
   <img src="https://www.postgresql.org/media/img/about/press/elephant.png" width="80" alt="PostgreSQL" />
 </p>
 
-<h1 align="center">Web & Ecommerce — Paraguay 🇵🇾</h1>
+<h1 align="center">Web & Ecommerce — Dulcesar 🇵🇾</h1>
 <p align="center">
   Plataforma web y ecommerce para una empresa paraguaya de alto reconocimiento nacional.
   <br/>Construida con <b>Laravel</b>, <b>Tailwind CSS</b> y <b>PostgreSQL</b>.
